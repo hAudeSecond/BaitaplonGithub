@@ -157,6 +157,9 @@ header>div {
 .main-content {
     position: relative;
     overflow: hidden;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*---------------------------------------------------*/
@@ -335,6 +338,7 @@ header>div {
 .news-container {
     margin-bottom: 10px;
     justify-content: center;
+    position: relative;
 }
 
 .news {
@@ -372,7 +376,7 @@ header>div {
 
 .news img {
     border-radius: 20px;
-    width: 550px;
+    width: 450px;
     transition: 0.7s;
 }
 
@@ -403,7 +407,7 @@ header>div {
 }
 
 .news>a:hover img {
-    width: 610px;
+    width: 510px;
 }
 
 /*-----overlay end*/
@@ -440,7 +444,9 @@ header>div {
 /*----page admission events start---------*/
 .admission-events-area {
     margin: 15px;
+    margin-left: auto;
     flex: 1;
+    max-width: 70%;
 }
 
 
@@ -648,13 +654,14 @@ body::-webkit-scrollbar-track {
 
 .footer {
 
-    padding: 10pxs;
+    padding: 40px;
     align-items: center;
     height: 3 00px;
     color: white;
+    justify-content: space-around;
 }
 
-.foot-contents iframe {
+.foot-contents3 iframe {
     width: 70%;
     height: 100%;
     opacity: 0.7;
@@ -680,6 +687,24 @@ footer>div:last-child {
     color: #006666;
 
     text-align: center;
+}
+
+.foot-contents3 {
+    flex: 1;
+}
+
+.foot-contents2 {
+    flex: 2;
+}
+
+.foot-contents1 {
+    flex: 2;
+}
+
+.footer i {
+    border-bottom: #FC9928 solid 3px;
+    margin-left: 30%;
+    margin-bottom: 20px;
 }
 
 /*----------------------------------------------*/
