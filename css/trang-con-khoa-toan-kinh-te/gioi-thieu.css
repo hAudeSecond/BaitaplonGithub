@@ -1,20 +1,23 @@
-.block-main{
+.block-main {
     padding: 50px 0;
     margin: 0px 80px;
 }
-.block-info{
+
+.block-info {
     width: 100%;
     justify-content: space-around;
 }
+
 .block-info .container-left li {
     list-style: none;
     width: 100%;
     margin-bottom: 8px;
     position: relative;
 }
+
 .block-info .container-left li a {
     background: #f2f2f2;
-    color:black;
+    color: black;
     padding: 8px 16px;
     font-weight: 600;
     font-size: 16px;
@@ -23,9 +26,11 @@
     display: block;
     text-decoration: none;
 }
-.active{
+
+.active {
     color: #e38538;
 }
+
 .title {
     position: relative;
     font-family: "Arial";
@@ -35,6 +40,7 @@
     line-height: 34px;
     margin: 0 0 25px 0;
 }
+
 .title hr {
     position: absolute;
     left: 0;
@@ -42,31 +48,37 @@
     border-top: 3px solid #f48220;
     width: 68px;
 }
+
 .block-info .container-left li a:hover {
-    color:#e38538;
+    color: #e38538;
 }
-.container-left{
-    position:fixed;
+
+.container-left {
+    position: fixed;
     width: 25%;
     padding-right: 15px;
     top: 260px;
 }
-.container-right{
+
+.container-right {
     width: 70%;
     padding-left: 15px;
     margin-left: auto;
 }
-.detail-content{
-    padding-top:25px;
+
+.detail-content {
+    padding-top: 25px;
     line-height: 1.5;
 }
-.container-right .detail-content .text{
+
+.container-right .detail-content .text {
     margin: 8px 0px;
     text-indent: 36pt;
     min-width: 500px;
     text-align: justify;
 }
-.container-right .detail-content .txt{
+
+.container-right .detail-content .txt {
     margin: 0cm;
     font-size: 13pt;
     caret-color: #000000;
@@ -74,13 +86,15 @@
     font-style: normal;
     font-weight: 400;
     text-indent: 0px;
-    text-align: justify;        
+    text-align: justify;
 }
-.container-right .detail-content ul .txt{
+
+.container-right .detail-content ul .txt {
     list-style-type: none;
     text-indent: 15pt;
 }
-.title-detail{
+
+.title-detail {
     font-family: "Roboto Slab";
     font-style: normal;
     font-weight: 500;
@@ -93,19 +107,22 @@
     margin-bottom: 30px;
     margin-top: 0px;
 }
-.info{
-    width:70%;
+
+.info {
+    width: 70%;
     max-width: 825px;
     vertical-align: middle;
     position: relative;
     justify-content: flex-start;
 }
-.container-right .img{  
-    
+
+.container-right .img {
+
     width: 25%;
     height: 120px;
 }
-.date{
+
+.date {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -114,11 +131,13 @@
     right: 0px;
     top: 5px;
 }
-.info a:hover{
-    color:#e38538;
+
+.info a:hover {
+    color: #e38538;
 }
-.info a{
-    position:absolute;
+
+.info a {
+    position: absolute;
     align-items: start;
     text-decoration: none;
     font-family: "Arial";
@@ -128,9 +147,11 @@
     line-height: 34px;
     margin: 0 0 25px 0;
 }
-.img{
+
+.img {
     width: 25%;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
