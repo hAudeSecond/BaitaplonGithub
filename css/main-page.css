@@ -25,6 +25,9 @@ html {
     }
 }
 
+body span {
+    color: #004B40;
+}
 
 
 .animation-div {

@@ -8,10 +8,10 @@
     <link rel="icon" href="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2021/09/icon-ueh-100x100.png" sizes="32x32">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="/js/main-page.js"></script>
-    <title>Tuyển sinh trường đại học Kinh tế</title>
+    <title id="tieude">Tuyển sinh trường đại học Kinh tế</title>
 </head>
 
-<body>
+<body onclick="recolor()">
     <div id="banner"></div>
     <header class="header flex">
         <div id="logo">
@@ -23,7 +23,7 @@
         </div>
 
         <div class="search flex">
-            <input id="search" type="text" placeholder="Tìm kiếm">
+            <input id="search" type="text" placeholder="Tìm kiếm" onchange="timkiem()">
             <div class="search-icon-container">
                 <img src="/img/search_img.png" alt="no-pics">
             </div>
@@ -57,7 +57,7 @@
                     <div class="animation-div">
                         <ul class="list">
                             <li><a href="/html/de-an.html">Đề án</a></li>
-                            <li><a href="/html/diem-chuan.html">Điểm chuẩn </a></li>
+                            <li><a href="diem-chuan.html" id="hau">Điểm chuẩn</a></li>
                             <li><a href="">Tỷ lệ việc làm</a></li>
                         </ul>
                     </div>
