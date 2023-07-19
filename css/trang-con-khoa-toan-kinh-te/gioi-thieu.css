@@ -1,7 +1,6 @@
 .block-main {
-    padding: 60px 0px 20px;
-    width: 100%;
-    z-index: 1;
+    padding: 50px 0;
+    margin: 0px 80px;
 }
 
 .block-info {
@@ -35,7 +34,7 @@
 .title {
     position: relative;
     font-family: "Arial";
-    color: #1f4f9f;
+    color: #006666;
     font-weight: 500;
     font-size: 20px;
     line-height: 34px;
@@ -55,17 +54,58 @@
 }
 
 .container-left {
-    flex: 0 0 auto;
-    width: 30%;
+    position: fixed;
+    width: 25%;
     padding-right: 15px;
-    overflow: hidden;
+    top: 260px;
 }
 
 .container-right {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 70%;
     padding-left: 15px;
+    margin-left: auto;
+}
+
+.detail-content {
+    padding-top: 25px;
+    line-height: 1.5;
+}
+
+.container-right .detail-content .text {
+    margin: 8px 0px;
+    text-indent: 36pt;
+    min-width: 500px;
+    text-align: justify;
+}
+
+.container-right .detail-content .txt {
+    margin: 0cm;
+    font-size: 13pt;
+    caret-color: #000000;
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    text-indent: 0px;
+    text-align: justify;
+}
+
+.container-right .detail-content ul .txt {
+    list-style-type: none;
+    text-indent: 15pt;
+}
+
+.title-detail {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #006666;
+    width: 100%;
+    max-width: 760px;
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 .info {
@@ -101,7 +141,7 @@
     align-items: start;
     text-decoration: none;
     font-family: "Arial";
-    color: #1f4f9f;
+    color: #006666;
     font-weight: 500;
     font-size: 20px;
     line-height: 34px;
@@ -110,4 +150,8 @@
 
 .img {
     width: 25%;
+}
+
+* {
+    box-sizing: border-box;
 }

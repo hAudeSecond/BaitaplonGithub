@@ -149,6 +149,7 @@ header>div {
 .menu .menu1 a:hover {
     background-color: #006666;
     color: white;
+    justify-content: none;
 }
 
 .menu1 {
