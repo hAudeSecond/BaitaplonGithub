@@ -55,10 +55,14 @@ body::-webkit-scrollbar-thumb {
     display: block;
 }
 
+.header {
+    justify-content: center;
+}
+
 /*This is the header area codes*/
 #ten {
-    flex: 1;
-    font-size: 30px;
+    flex: 4;
+    font-size: 60px;
     font-weight: bold;
     color: white;
 }
@@ -66,26 +70,6 @@ body::-webkit-scrollbar-thumb {
 header {
     background-color: #006666;
     align-items: center;
-}
-
-#search {
-    border-radius: 20px;
-    padding-left: 10px;
-    width: 400px;
-    height: 35px;
-    border: none;
-    opacity: 0.7;
-    background-color: white;
-}
-
-.search {
-    flex: 2;
-    justify-content: center;
-}
-
-
-.search-icon-container {
-    width: 45px;
 }
 
 .search-icon-container img {
@@ -99,7 +83,7 @@ header>div {
 }
 
 #logo {
-    flex: 0.7;
+    flex: 1;
     margin: 10px;
     width: 50px;
 }

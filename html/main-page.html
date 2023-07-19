@@ -11,7 +11,7 @@
     <title id="tieude">Tuyển sinh trường đại học Kinh tế</title>
 </head>
 
-<body onclick="recolor()">
+<body>
     <div id="banner"></div>
     <header class="header flex">
         <div id="logo">
@@ -23,13 +23,13 @@
         </div>
 
         <div class="search flex">
-            <input id="search" type="text" placeholder="Tìm kiếm" onchange="timkiem()">
+            <input id="search" type="text" placeholder="Tìm kiếm">
             <div class="search-icon-container">
-                <img src="/img/search_img.png" alt="no-pics">
+                <img src="/img/search_img.png" alt="no-pics" onclick="timkiem(),timkiemmain()">
             </div>
         </div>
     </header>
-    <div class="main-content">
+    <div class="main-content" onclick="recolor(),recolormain()">
         <div class="menu">
             <ul class="menu1">
                 <li><a href="#">Trang chủ</a></li>
@@ -291,7 +291,7 @@
                     <select name="advidsory-input" id="advis-input">
                         <option value="-Hệ-">- Hệ -</option>
                         <option value="Cử nhân Đại học chính quy">Cử nhân đại học chính quy</option>
-                        <option value="Cử nhân Đaị học vùa làm vừa học">Cử nhân Đaị học vùa làm vừa học</option>
+                        <option value="Cử nhân Đaị học vùa làm vừa học">Cử nhân Đaị học vừa làm vừa học</option>
                         <option value="Thạc sĩ">Thạc sĩ</option>
                         <option value="Tiến sĩ">Tiến sĩ</option>
                         <option value="Chứng chỉ ngắn hạn">Chứng chỉ ngắn hạn</option>
