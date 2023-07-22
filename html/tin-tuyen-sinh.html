@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2021/09/icon-ueh-100x100.png" sizes="32x32">
-    <link rel="stylesheet" href="/css/de-an.css">
-    <script src="/js/de-an.js"></script>
-    <title>Đề án tuyển sinh UEH</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/tin-tuyen-sinh.css">
+    <script src="/js/tin-tuyen-sinh.js"></script>
+    <title>Tin tuyển sinh UEH</title>
 </head>
 
 <body>
-
     <div id="banner"></div>
     <header class="header flex">
         <div id="logo">
@@ -23,12 +22,17 @@
             University of economic
         </div>
 
+        <div class="search flex">
+            <input id="search" type="text" placeholder="Tìm kiếm">
+            <div class="search-icon-container">
+                <img src="/img/search_img.png" alt="no-pics" onclick="timkiem(),timkiemmain()">
+            </div>
+        </div>
     </header>
     <div class="main-content">
-        <!--menu-->
         <div class="menu">
             <ul class="menu1">
-                <li><a href="/html/main-page.html">Trang chủ</a></li>
+                <li><a href="#">Trang chủ</a></li>
                 <li><a href="#">Tuyển sinh</a></li>
                 <li>
                     <a href="#">Khoa-Ngành</a>
@@ -52,13 +56,13 @@
                     <a href="#">Thông tin liên quan</a>
                     <div class="animation-div">
                         <ul class="list">
-                            <li><a href="#">Đề án</a></li>
-                            <li><a href="/html/diem-chuan.html">Điểm chuẩn </a></li>
+                            <li><a href="/html/de-an.html">Đề án</a></li>
+                            <li><a href="/html/diem-chuan.html" id="hau">Điểm chuẩn</a></li>
                             <li><a href="/html/Tylevieclam.html">Tỷ lệ việc làm</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Liên hệ</a></li>
+                <li><a href="mailto:hauvtct@gmail.com">Liên hệ</a></li>
             </ul>
         </div>
         <!-- image slider start-->
@@ -105,49 +109,105 @@
             </div>
         </div>
         <!--image slider end-->
-        <div class="de-an">
-            <div class="title">Đề án tuyển sinh Trường đại học Kinh tế 2023</div>
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0001.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0002.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0003.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0004.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0005.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0006.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0007.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0008.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0009.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0010.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0011.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0012.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0013.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0014.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0015.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0016.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0017.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0018.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0019.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0020.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0021.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0022.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0024.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0025.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0026.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0027.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0028.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0029.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0030.jpg" alt="">
-            <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0031.jpg" alt="">
+    </div>
+    <div class="introduce-container">
+        <p class="introduce">Tin tức tuyển sinh UEH</p>
+    </div>
+    <div class="section1">
+        <!----------------------------------------->
+        <div class="news">
+            <div>
+                <p class="news-title"><span> UEH</span> <span>đang tuyển sinh</span> </p>
+            </div>
+            <div class="content-area flex">
+
+                <div class="news-area">
+
+                    <div>
+
+                        <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/07/ZAN_0189-400x267.jpg"
+                            alt="tintuyensinh-pics">
+                        <p class="news-content">
+                            TUYỂN SINH ĐẠI HỌC 2023: Về việc nộp chứng chỉ tiếng Anh đối với thí sinh đăng kí xét tuyển
+                            Chương
+                            trình Kế toán tích hợp chứng chỉ nghề nghiệp quốc tế bằng phương thức xét tuyển dựa vào kết
+                            quả
+                            thi
+                            tốt nghiệp THPT năm 2023, Khóa 49 - ĐHCQ.
+                        </p>
+                        <p class="date">11/7/2023</p>
+                        <p class="ex-content">Trường Đại học Kinh tế TP.Hồ Chí Minh thông báo thí sinh đăng ký chương
+                            trình
+                            Kế
+                            toán tích hợp chứng chỉ nghề nghiệp.</p>
+                    </div>
+                </div>
+
+                <div class="news-area">
+
+                    <div>
+
+                        <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/06/ZAN_0383-400x267.jpg"
+                            alt="tintuyensinh-pics">
+                        <p class="news-content">
+                            TUYỂN SINH ĐẠI HỌC 2023: Thông báo kết quả Phương thức xét tuyển thẳng theo quy định của Bộ
+                            Giáo
+                            dục
+                            và Đào tạo và theo Đề án tuyển sinh Đại học Khóa 49 - Đại học chính quy, năm 2023 của Trường
+                            Đại
+                            học
+                            Kinh tế TP. Hồ Chí Minh.
+                        </p>
+                        <p class="date">04/7/2023</p>
+                        <p class="ex-content">Hội đồng tuyển sinh Trường Đại học Kinh tế TP. Hồ Chí Minh thông báo kết
+                            quả
+                            Phương thức xét tuyển thẳng theo quy định.</p>
+                    </div>
+                </div>
+
+                <div class="news-area">
+
+                    <div>
+
+                        <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2021/10/1-5-Copy.jpg"
+                            alt="tintuyensinh-pics">
+                        <p class="news-content">
+                            UEH tuyển sinh Văn bằng 2 Đại học, hình thức đào tạo chính quy, đợt thắng 9 năm 2023.
+                        </p>
+                        <p class="date">30/06/2023</p>
+                        <p class="ex-content">ĐĂNG KÝ TRỰC TUYẾN TẠI ĐÂY Trường Đại học Kinh tế TP. Hồ Chí Minh (UEH)
+                            thông
+                            báo
+                            tuyển sinh Khóa 26.3 – Văn bằng</p>
+                    </div>
+                </div>
+
+                <div class="news-area">
+
+                    <div>
+
+                        <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2021/09/1-7.jpg">
+                        <p class="news-content">
+                            UEH tuyển sinh Liên thông Đại học, hình thức đào tạo chính quy, đợt tháng 9 năm 2023.
+                        </p>
+                        <p class="date">30/06/2023</p>
+                        <p class="ex-content">ĐĂNG KÝ TRỰC TUYẾN TẠI ĐÂY Trường Đại học Kinh tế TP. Hồ Chí Minh (UEH)
+                            thông
+                            báo
+                            tuyển sinh Khóa 28.3 – Liên thông</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-
-    <!--footer-->
-    <!--footer-->
 
     <footer>
         <div class="footer flex">
             <div class="foot-contents1" style="position: relative;">
                 <i class="material-icons" style="font-size:50px;">perm_phone_msg</i><br>
-                <p>Email: <a id="email" href="mailto:2551050028hau@ou.edu.vn">mailto:2551050028hau@ou.edu.vn</a> </p>
+                <p>Email: <a id="email" href="mailto:2551050028hau@ou.edu.vn">mailto:2551050028hau@ou.edu.vn</a>
+                </p>
                 <p>Hotline: 0916030072</p>
                 <p>Fax: (024) 123456789</p>
             </div>
@@ -171,7 +231,6 @@
             <p>University of Economic &copy; 2023. All Right Reserved</p>
         </div>
     </footer>
-
 </body>
 
 </html>

@@ -4,6 +4,113 @@
     margin: 0;
 }
 
+/*---------------------------------------------------*/
+
+/*This is img slide change code*/
+.slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/*css for manual slide navigation*/
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: 470px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #669999;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1.0s;
+    margin: 2px;
+}
+
+.manual-btn:hover {
+    background-color: #669999;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+.navigation-auto {
+    position: absolute;
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 470px;
+
+}
+
+.navigation-auto div {
+    border: 2px solid #669999;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 1.0s;
+    margin: 2px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #669999;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #669999;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #669999;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: #669999;
+}
+
+/*------------automatic end-------------------*/
 
 @keyframes swipe {
     0% {
@@ -14,10 +121,6 @@
         opacity: 1;
     }
 
-}
-
-.de-an {
-    text-align: center;
 }
 
 /* scroll-bar*/
@@ -142,130 +245,42 @@ header>div {
 
 }
 
-/*---------------------------------------------------*/
-
-/*This is img slide change code*/
-.slider {
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+/*ty le viec lam img codes start*/
+.tyle-content {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.slides {
-    width: 500%;
-    height: 500px;
-    display: flex;
-}
-
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 20%;
-    transition: 2s;
-    height: 100%;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-}
-
-/*css for manual slide navigation*/
-.navigation-manual {
-    position: absolute;
-    width: 100%;
-    margin-top: 470px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #669999;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 1.0s;
-    margin: 2px;
-}
-
-.manual-btn:hover {
-    background-color: #669999;
-}
-
-#radio1:checked~.first {
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -20%;
-}
-
-#radio3:checked~.first {
-    margin-left: -40%;
-}
-
-#radio4:checked~.first {
-    margin-left: -60%;
-}
-
-/*css for automatic navigation*/
-.navigation-auto {
-    position: absolute;
-
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 470px;
-
-}
-
-.navigation-auto div {
-    border: 2px solid #669999;
-    padding: 5px;
-    border-radius: 50%;
-    transition: 1.0s;
-    margin: 2px;
-}
-
-#radio1:checked~.navigation-auto .auto-btn1 {
-    background-color: #669999;
-}
-
-#radio2:checked~.navigation-auto .auto-btn2 {
-    background-color: #669999;
-}
-
-#radio3:checked~.navigation-auto .auto-btn3 {
-    background-color: #669999;
-}
-
-#radio4:checked~.navigation-auto .auto-btn4 {
-    background-color: #669999;
-}
-
-/*------------automatic end-------------------*/
-/*---TITLE*/
-.title {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+.title-tyle {
     font-size: 60px;
-    font-weight: bolder;
     color: #004B40;
-    border-bottom: #FC9928 solid 7px;
+    font-weight: bold;
+    border-bottom: #FC9928 solid 5px;
+    max-width: 60%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
+.content {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/*footer code*/
+.content img {
+    width: 100%;
+}
+
+/*ty le viec lam img codes end*/
+
+/*This is footer code*/
+
+
 .footer {
 
     padding: 40px;
-    align-items: center;
     height: 3 00px;
     color: white;
     justify-content: space-around;
@@ -316,6 +331,5 @@ footer>div:last-child {
     margin-left: 30%;
     margin-bottom: 20px;
 }
-
 
 /*----------------------------------------------*/
