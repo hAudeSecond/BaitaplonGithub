@@ -54,5 +54,31 @@ function recolor() {
     }
 }
 
+window.onscroll = function () {
+    console.info(document.documentElement.scrollTop);
+    var header = document.querySelector(".menu");
+    var Topbtn = document.querySelector(".goto-Top");
+    if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 50) {
+        header.style.position = "fixed";
+        header.style.left = 0;
+        header.style.right = 0;
+        header.style.top = 0;
+        Topbtn.style.right = "1%";
+    }
+    else {
+        header.style.position = "relative";
+        Topbtn.style.right = "-4%";
+    }
+}
+
+function goToTop() {
+    var timer = setInterval(function () {
+        document.documentElement.scrollTop -= 28;
+        if (document.documentElement.scrollTop <= 0) {
+            clearInterval(timer);
+        }
+    }, 1);
+
+}
 
 

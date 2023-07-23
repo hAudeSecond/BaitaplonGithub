@@ -657,6 +657,35 @@ body::-webkit-scrollbar-track {
 }
 
 /*--advidsory end--*/
+/*Go to top start*/
+.goto-Top {
+    position: fixed;
+    right: -4%;
+    bottom: 45%;
+    font-weight: bolder;
+    background-color: #FC9928;
+    color: white;
+    max-width: 5%;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 3;
+    transition: 0.6s;
+}
+
+.goto-Top:hover {
+    background-color: #004B40;
+    padding: 13px;
+}
+
+.goto-Top i {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+/*Go to top end*/
+
 /*This is footer code*/
 
 .footer {
