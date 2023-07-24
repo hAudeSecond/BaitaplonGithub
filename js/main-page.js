@@ -15,7 +15,7 @@ function timkiem() {
         var h1 = v1[i].textContent;
         h1 = h1.toUpperCase();
         if (h1.indexOf(k1.toUpperCase()) >= 0) {
-            v1[i].setAttribute("style", "color:#CC6699;");
+            v1[i].setAttribute("style", "color:#CC6699; text-shadow:1px 1px black;");
         }
     }
 }
@@ -49,7 +49,7 @@ function recolor() {
         var h2 = v2[i].textContent;
         h2 = h2.toUpperCase();
         if (h2.indexOf(k2.toUpperCase()) >= 0) {
-            v2[i].setAttribute("style", "color:white;");
+            v2[i].setAttribute("style", "color:white; text-shadow:none;");
         }
     }
 }

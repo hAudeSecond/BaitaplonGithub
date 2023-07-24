@@ -138,12 +138,14 @@ header>div {
     text-align: center;
     padding: 10px 0px;
     color: #006666;
+    transition: 0.3s;
 }
 
 .menu .menu1 a:hover {
     background-color: #006666;
     color: white;
     justify-content: none;
+    padding: 12px;
 }
 
 .menu1 {
@@ -306,11 +308,26 @@ header>div {
     list-style-type: none;
 }
 
+.main-menu li:first-child {
+    color: #FC9928 !important;
+    font-size: large;
+}
+
 .main-menu li {
-    vertical-align: middle;
-    margin: 10px;
+    display: block;
+    padding: 20px;
+    font-size: large;
     border-bottom: #669999 solid 1px;
     color: #004B40;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-menu li:hover {
+    cursor: pointer;
+    background-color: #004B40;
+    color: aliceblue;
+    padding: 30px;
 }
 
 .new-content {
@@ -324,7 +341,7 @@ header>div {
 }
 
 .main-menu {
-    flex: 1;
+    flex: 1.1;
 }
 
 .main-pics {

@@ -138,12 +138,14 @@ header>div {
     text-align: center;
     padding: 10px 0px;
     color: #006666;
+    transition: 0.3s;
 }
 
 .menu .menu1 a:hover {
     background-color: #006666;
     color: white;
     justify-content: none;
+    padding: 12px;
 }
 
 .menu1 {

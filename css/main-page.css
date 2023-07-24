@@ -144,12 +144,14 @@ header>div {
     text-align: center;
     padding: 10px 0px;
     color: #006666;
+    transition: 0.3s;
 }
 
 .menu .menu1 a:hover {
     background-color: #006666;
     color: white;
     justify-content: none;
+    padding: 12px;
 }
 
 .menu1 {
@@ -384,7 +386,7 @@ header>div {
 .news img {
     border-radius: 20px;
     width: 450px;
-    transition: 0.7s;
+    transition: 0.4s;
 }
 
 /*-----over lay start-----*/
@@ -434,7 +436,7 @@ header>div {
     color: #004B40;
     font-size: 25px;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
     display: block;
     border-radius: 5px;
     max-width: 120px;
@@ -444,6 +446,7 @@ header>div {
 .news .more-info-btn:hover {
     background-color: #004B40;
     color: white;
+    padding: 15px;
 }
 
 /*-----page infomation for admissions end--------------------*/
@@ -567,7 +570,7 @@ body::-webkit-scrollbar-track {
     font-weight: bold;
     text-decoration: none;
     color: #004B40;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     transition: 0.5s;
     display: block;
@@ -576,6 +579,7 @@ body::-webkit-scrollbar-track {
 .scholarship-title:hover {
     background-color: #004B40;
     color: white;
+    padding: 18px;
 }
 
 .scholarship-content img {
@@ -647,6 +651,7 @@ body::-webkit-scrollbar-track {
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    transition: 0.5s;
 }
 
 .submit-btn {
@@ -654,6 +659,11 @@ body::-webkit-scrollbar-track {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.submit-btn button:hover {
+    height: 35px;
+    background-color: #FC9928;
 }
 
 /*--advidsory end--*/
@@ -669,7 +679,7 @@ body::-webkit-scrollbar-track {
     text-align: center;
     border-radius: 10px;
     z-index: 3;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 .goto-Top:hover {
