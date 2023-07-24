@@ -267,13 +267,79 @@ header>div {
     background-color: #669999;
 }
 
+/*content start*/
+.new-content img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.career-title span:first-child {
+    color: #FC9928;
+    border-bottom: #004B40 solid 4px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.career-title span:last-child {
+    color: #004B40;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.career-title {
+    margin: 20px;
+}
+
+.content {
+    color: #006666;
+}
+
+.date {
+    color: grey;
+}
+
+.ex-content {
+    color: #669999;
+}
+
+.main-menu ul {
+    list-style-type: none;
+}
+
+.main-menu li {
+    vertical-align: middle;
+    margin: 10px;
+    border-bottom: #669999 solid 1px;
+    color: #004B40;
+}
+
+.new-content {
+    max-width: 400px;
+    margin: 20px;
+}
+
+.news-content-area {
+    flex-wrap: wrap;
+    border-right: #669999 solid 1px;
+}
+
+.main-menu {
+    flex: 1;
+}
+
+.main-pics {
+    flex: 2;
+}
+
+/*content end*/
+
 /*------------automatic end-------------------*/
 
 .footer {
 
     padding: 40px;
     align-items: center;
-    height: 3 00px;
+    height: 100px;
     color: white;
     justify-content: space-around;
 }
