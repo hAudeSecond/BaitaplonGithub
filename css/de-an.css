@@ -1,10 +1,12 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
+html {
+    width: 100%;
 }
 
+body {
+    overflow-x: hidden;
+}
 
+/*This is the animation of MENU codes*/
 @keyframes swipe {
     0% {
         opacity: 0;
@@ -16,23 +18,74 @@
 
 }
 
-.de-an {
-    text-align: center;
+
+
+body span {
+    color: #004B40;
 }
 
-/* scroll-bar*/
+/*scrollbox-start*/
+
+.scroll-box {
+    height: 480px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+
+*::-webkit-scrollbar-thumb {
+    background-color: #004B40;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #FC9928;
+    border-radius: 10px;
+}
+
 body::-webkit-scrollbar {
     width: 10px;
 }
 
 body::-webkit-scrollbar-track {
     background-color: white;
-    border-radius: 20px;
 }
 
-body::-webkit-scrollbar-thumb {
-    background-color: #004B40;
-    border-radius: 20px;
+/*---scroll box end*/
+
+
+
+.animation-div {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    display: none;
+    z-index: 100;
+    animation-name: swipe;
+    animation-duration: 1.4s;
+}
+
+@media screen and (min-width:450px) {
+
+    .menu li:hover .animation-div {
+
+        display: block;
+    }
+}
+
+
+
+/*------------------------------*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -41,29 +94,11 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
 }
 
-.animation-div {
-    position: absolute;
-    width: 100%;
-    background-color: white;
-    display: none;
-
-    animation-name: swipe;
-    animation-duration: 1.4s;
-}
-
-.menu li:hover .animation-div {
-
-    display: block;
-}
-
-.header {
-    justify-content: center;
-}
 
 /*This is the header area codes*/
 #ten {
-    flex: 4;
-    font-size: 60px;
+    flex: 1;
+    font-size: 30px;
     font-weight: bold;
     color: white;
 }
@@ -73,10 +108,35 @@ header {
     align-items: center;
 }
 
+#search {
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 300px;
+    height: 35px;
+    border: none;
+    opacity: 0.7;
+    background-color: white;
+}
+
+.search {
+    flex: 2;
+    justify-content: center;
+}
+
+
+.search-icon-container {
+    width: 45px;
+}
+
 .search-icon-container img {
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.3;
     display: inline-block;
+    cursor: pointer;
+}
+
+.search-icon-container img:hover {
+    opacity: 1;
 }
 
 header>div {
@@ -84,9 +144,9 @@ header>div {
 }
 
 #logo {
-    flex: 1;
+    flex: 0.7;
     margin: 10px;
-    width: 50px;
+    width: 250px;
 }
 
 #logo img {
@@ -109,7 +169,6 @@ header>div {
     color: #006666;
     font-weight: bolder;
     z-index: 100;
-    margin-bottom: 20px;
 }
 
 .menu a {
@@ -120,13 +179,16 @@ header>div {
     padding: 10px 0px;
     color: #006666;
     transition: 0.3s;
+    font-size: large;
 }
 
-.menu .menu1 a:hover {
-    background-color: #006666;
-    color: white;
-    justify-content: none;
-    padding: 12px;
+@media screen and (min-width:450px) {
+    .menu .menu1 a:hover {
+        background-color: #006666;
+        color: white;
+        justify-content: none;
+        padding: 18px 0px;
+    }
 }
 
 .menu1 {
@@ -141,7 +203,9 @@ header>div {
 
 .main-content {
     position: relative;
-
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*---------------------------------------------------*/
@@ -149,7 +213,7 @@ header>div {
 /*This is img slide change code*/
 .slider {
     width: 100%;
-    height: 500px;
+    height: 570px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -157,7 +221,7 @@ header>div {
 
 .slides {
     width: 500%;
-    height: 500px;
+    height: 570px;
     display: flex;
 }
 
@@ -181,7 +245,7 @@ header>div {
 .navigation-manual {
     position: absolute;
     width: 100%;
-    margin-top: 470px;
+    margin-top: 520px;
     display: flex;
     justify-content: center;
 }
@@ -222,7 +286,7 @@ header>div {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 470px;
+    margin-top: 520px;
 
 }
 
@@ -251,19 +315,27 @@ header>div {
 }
 
 /*------------automatic end-------------------*/
-/*---TITLE*/
-.title {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 60px;
-    font-weight: bolder;
-    color: #004B40;
-    border-bottom: #FC9928 solid 7px;
+/*BODY*/
+.de-an {
+    width: 100%;
 }
 
+.title {
+    font-size: 40px;
+    text-align: center;
+    color: #FC9928;
+    font-weight: bold;
+    margin-top: 30px;
+    border-bottom: #004B40 4px solid;
+    padding-bottom: 10px;
+}
 
-/*footer code*/
+.de-an img {
+    width: 100%;
+}
+
+/*This is footer code*/
+
 .footer {
 
     padding: 40px;
@@ -319,5 +391,304 @@ footer>div:last-child {
     margin-bottom: 20px;
 }
 
+/*=================================RESPONSIVE FOR SMALL LAPTOP===================================*/
+@media screen and (max-width:1200px) {
 
-/*----------------------------------------------*/
+    .menu1 a {
+        font-size: 14px;
+    }
+
+    .main-content {
+        width: 95%;
+    }
+
+    .slider {
+        height: 370px;
+    }
+
+    .slides {
+        height: 100%;
+    }
+
+    .navigation-manual {
+        margin-top: 330px;
+    }
+
+    .navigation-auto {
+        margin-top: 330px;
+    }
+
+    .footer {
+        font-size: 13px;
+
+    }
+
+    .footer .foot-contents3 {
+        flex: 2;
+    }
+}
+
+
+
+
+
+
+/*------------------------------------RESPONSIVE FOR MOBILE------------------------------------------------------------------------------------*/
+/*an cac nut khong can thiet cho man hinh lon*/
+@media screen and (min-width:450px) {
+    #closed-btn {
+        display: none;
+    }
+
+    #open-btn {
+        display: none;
+    }
+
+    #PullupList {
+        display: none;
+    }
+
+    #PullupInfo {
+        display: none;
+    }
+}
+
+/*============================================*/
+@media screen and (max-width:450px) {
+    #ten {
+        flex: 1;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+
+    header {
+        flex-direction: column;
+        background-color: #006666;
+        align-items: center;
+    }
+
+    #logo {
+        flex: 0.7;
+        margin: 10px;
+        width: 150px;
+    }
+
+
+    /*---scroll box start*/
+    .scroll-box {
+        height: 480px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    *::-webkit-scrollbar {
+        width: 7px;
+    }
+
+
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #004B40;
+        border-radius: 10px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background-color: #FC9928;
+        border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background-color: white;
+    }
+
+    /*------------Menu responsive for mobile start*/
+
+    .main-content {
+        width: 100%;
+    }
+
+    .menu1 a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .menu1 {
+        position: fixed;
+        flex-direction: column;
+        width: 60%;
+        top: 0px;
+        z-index: 100;
+        left: -60%;
+        transition: 0.4s;
+    }
+
+    .menu1 li {
+        width: 100%;
+        background-color: #FC9928;
+    }
+
+    .menu1>li>a {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .list li a {
+        text-align: left;
+        padding-left: 30px;
+        color: #053737;
+    }
+
+    #closed-btn {
+        background-color: #FC9928;
+        color: #004B40;
+        border: 0;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #open-btn {
+        position: fixed;
+        z-index: 99;
+        top: 20px;
+        padding: 10px;
+        background-color: #db7705;
+        border: #004B40;
+        font-size: 30px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+
+
+    /*------------Menu responsive for mobile end*/
+
+
+    /*---------------------------------------------------*/
+
+    .slider {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slides {
+        width: 500%;
+        height: 250px;
+        display: flex;
+    }
+
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        width: 20%;
+        transition: 2s;
+        height: 100%;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*css for manual slide navigation*/
+    .navigation-manual {
+        position: absolute;
+        width: 100%;
+        margin-top: 220px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    /*css for automatic navigation*/
+    .navigation-auto {
+        position: absolute;
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 220px;
+
+    }
+
+    /*Body code start*/
+    .title {
+        font-size: 20px;
+    }
+
+    .de-an img {
+        width: 100%;
+    }
+
+    /*Body code end*/
+
+
+
+    /*This is footer code*/
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .foot-contents3 iframe {
+        width: 92%;
+    }
+
+    #email {
+        text-decoration: none;
+        color: white;
+    }
+
+    #email:hover {
+        color: chocolate;
+    }
+
+    footer {
+        background-color: #006666;
+        font-size: larger;
+        font-size: 15px;
+    }
+
+    .foot-contents3 {
+        flex: 1;
+        margin-top: 30px;
+    }
+
+    .foot-contents2 {
+        flex: 2;
+    }
+
+    .foot-contents1 {
+        flex: 2;
+        margin-bottom: 30px;
+    }
+
+    .footer i {
+        border-bottom: #FC9928 solid 3px;
+        margin-left: 40%;
+        margin-bottom: 10px;
+    }
+
+
+    /*----------------------------------------------*/
+
+
+    /*------------automatic end-------------------*/
+}

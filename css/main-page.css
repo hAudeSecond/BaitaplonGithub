@@ -2,6 +2,10 @@ html {
     width: 100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*This is the animation of MENU codes*/
 @keyframes swipe {
     0% {
@@ -40,9 +44,12 @@ body span {
     animation-duration: 1.4s;
 }
 
-.menu li:hover .animation-div {
+@media screen and (min-width:450px) {
 
-    display: block;
+    .menu li:hover .animation-div {
+
+        display: block;
+    }
 }
 
 
@@ -77,7 +84,7 @@ header {
 #search {
     border-radius: 20px;
     padding-left: 10px;
-    width: 400px;
+    width: 300px;
     height: 35px;
     border: none;
     opacity: 0.7;
@@ -112,7 +119,7 @@ header>div {
 #logo {
     flex: 0.7;
     margin: 10px;
-    width: 50px;
+    width: 250px;
 }
 
 #logo img {
@@ -145,13 +152,16 @@ header>div {
     padding: 10px 0px;
     color: #006666;
     transition: 0.3s;
+    font-size: large;
 }
 
-.menu .menu1 a:hover {
-    background-color: #006666;
-    color: white;
-    justify-content: none;
-    padding: 12px;
+@media screen and (min-width:450px) {
+    .menu .menu1 a:hover {
+        background-color: #006666;
+        color: white;
+        justify-content: none;
+        padding: 18px 0px;
+    }
 }
 
 .menu1 {
@@ -176,7 +186,7 @@ header>div {
 /*This is img slide change code*/
 .slider {
     width: 100%;
-    height: 500px;
+    height: 570px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -184,7 +194,7 @@ header>div {
 
 .slides {
     width: 500%;
-    height: 500px;
+    height: 570px;
     display: flex;
 }
 
@@ -208,7 +218,7 @@ header>div {
 .navigation-manual {
     position: absolute;
     width: 100%;
-    margin-top: 470px;
+    margin-top: 520px;
     display: flex;
     justify-content: center;
 }
@@ -249,7 +259,7 @@ header>div {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 470px;
+    margin-top: 520px;
 
 }
 
@@ -606,7 +616,7 @@ body::-webkit-scrollbar-track {
     max-width: fit-content;
 }
 
-.advidsory>p {
+.advidsory>p:first-child {
     text-align: center;
     font-size: 30px;
     border-bottom: #FC9928 solid 3px;
@@ -614,7 +624,41 @@ body::-webkit-scrollbar-track {
     padding-bottom: 10px;
 }
 
-#advis-input {
+.advidsory #warning {
+    margin-top: 10px !important;
+    font-size: 15px !important;
+    color: #FC9928 !important;
+}
+
+
+#advis-input-firstname {
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#name-warning {
+    margin-top: 10px !important;
+    font-size: 15px !important;
+    color: #FC9928 !important;
+
+}
+
+#success {
+    margin-top: 10px !important;
+    font-size: 20px !important;
+    color: #FC9928 !important;
+    text-align: center;
+}
+
+#choice {
+    margin-top: 10px !important;
+    font-size: 15px !important;
+    color: #FC9928 !important;
+
+}
+
+#advis-input-lastname {
     height: 30px;
     border-radius: 5px;
     padding: 2px;
@@ -684,12 +728,12 @@ body::-webkit-scrollbar-track {
 
 .goto-Top:hover {
     background-color: #004B40;
-    padding: 13px;
+    padding: 10px;
 }
 
 .goto-Top i {
     display: block;
-    padding: 10px;
+    padding: 7px;
     cursor: pointer;
     font-size: 35px;
 }
@@ -754,3 +798,742 @@ footer>div:last-child {
 }
 
 /*----------------------------------------------*/
+
+/*==============================RESPONDSIVE FOR LAPTOP S=============================================*/
+
+@media screen and (max-width:1100px) {
+    .admission1 {
+        flex: 1;
+        position: relative;
+        background-color: #006666;
+        color: white;
+    }
+
+    #ten {
+        font-size: 20px;
+    }
+
+    .admission2 {
+        flex: 1;
+        position: relative;
+        background-color: #FC9928;
+        color: white;
+    }
+
+    .admission3 {
+        flex: 1;
+        position: relative;
+        background-color: #004B40;
+        color: white;
+    }
+
+    .admission-container .type {
+        max-width: 95px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        right: 20%;
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+
+    }
+
+    .admission-container {
+        justify-content: center;
+        margin: 10px;
+        margin-bottom: 30px;
+        height: 275px;
+    }
+
+    .admission-container>div {
+        max-width: 150px;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .admission-container div>p {
+        padding-top: 100px;
+    }
+
+    .admission-container div:first-child {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .admission-container div:last-child {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    /*responsive go-toTop btn*/
+    .goto-Top {
+        position: fixed;
+        font-weight: bold;
+        background-color: #FC9928;
+        color: white;
+        max-width: 5%;
+        text-align: center;
+        border-radius: 8px;
+        z-index: 3;
+        transition: 0.55s;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .navigation-manual {
+        position: absolute;
+        width: 100%;
+        margin-top: 380px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto {
+        position: absolute;
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 380px;
+
+    }
+
+    .main-content {
+        width: 95%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .news img {
+        border-radius: 20px;
+        width: 350px;
+        transition: 0.4s;
+    }
+
+    .news>a:hover img {
+        width: 410px;
+    }
+
+    .scholarship-title {
+        font-size: 20px;
+    }
+
+    .date-square>p {
+        font-size: 35px;
+    }
+
+    .event-content div p {
+        color: black;
+        font-size: 18px;
+    }
+
+}
+
+/*===================================================RESPONSIVE FOR MOBILE===============================*/
+/*an cac nut khong can thiet cho man hinh lon*/
+@media screen and (min-width:450px) {
+    #closed-btn {
+        display: none;
+    }
+
+    #open-btn {
+        display: none;
+    }
+
+    #PullupList {
+        display: none;
+    }
+
+    #PullupInfo {
+        display: none;
+    }
+}
+
+/*============================================*/
+
+@media screen and (max-width:450px) {
+    #ten {
+        flex: 1;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+
+    header {
+        flex-direction: column;
+        background-color: #006666;
+        align-items: center;
+    }
+
+    #logo {
+        flex: 0.7;
+        margin: 10px;
+        width: 150px;
+    }
+
+
+    /*---scroll box start*/
+    .scroll-box {
+        height: 480px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    *::-webkit-scrollbar {
+        width: 7px;
+    }
+
+
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #004B40;
+        border-radius: 10px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background-color: #FC9928;
+        border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background-color: white;
+    }
+
+
+    /*------------Menu responsive for mobile start*/
+
+    .main-content {
+        width: 100%;
+    }
+
+    .menu1 a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+
+    .menu1 {
+        position: fixed;
+        flex-direction: column;
+        width: 60%;
+        top: 0px;
+        z-index: 100;
+        left: -60%;
+        transition: 0.4s;
+    }
+
+    .menu1 li {
+        width: 100%;
+        background-color: #FC9928;
+    }
+
+    .menu1>li>a {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .list li a {
+        text-align: left;
+        padding-left: 30px;
+        color: #053737;
+    }
+
+    #closed-btn {
+        background-color: #FC9928;
+        color: #004B40;
+        border: 0;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #open-btn {
+        position: fixed;
+        z-index: 99;
+        top: 20px;
+        padding: 10px;
+        background-color: #db7705;
+        border: #004B40;
+        font-size: 30px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+
+
+    /*------------Menu responsive for mobile end*/
+
+
+
+    /*---------------------------------------------------*/
+
+    .slider {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slides {
+        width: 500%;
+        height: 250px;
+        display: flex;
+    }
+
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        width: 20%;
+        transition: 2s;
+        height: 100%;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*css for manual slide navigation*/
+    .navigation-manual {
+        position: absolute;
+        width: 100%;
+        margin-top: 220px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    /*css for automatic navigation*/
+    .navigation-auto {
+        position: absolute;
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 220px;
+
+    }
+
+
+
+
+    /*------------automatic end-------------------*/
+    /*admission introduction start*/
+
+
+    .admission-container .type {
+        position: absolute;
+
+        display: block;
+        min-width: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        left: 10px;
+    }
+
+    .admission-container {
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        height: 700px;
+    }
+
+    .admission-container>div {
+        max-width: 100%;
+        height: 16%;
+        padding: 10px;
+        text-align: center;
+        border-radius: 0px;
+    }
+
+    .admission-container div>p {
+        padding-top: 40px;
+    }
+
+    .admission-container div:first-child {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .admission-container div:last-child {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+
+    /*---------------admission introduction end--------------*/
+    .news-container {
+        margin-bottom: 10px;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+    }
+
+    .news>a {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+
+    }
+
+    .news>* {
+        margin: 5px;
+        position: relative;
+    }
+
+    .First-word {
+        color: #FC9928;
+        font-weight: bolder;
+        font-size: 30px;
+        border-bottom: 4px solid #004B40;
+        padding: 4px;
+    }
+
+    .rest {
+        color: #004B40;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .news img {
+        border-radius: 20px;
+        width: 310px;
+        transition: 0.4s;
+    }
+
+    /*-----over lay start-----*/
+
+
+    .overlay p {
+        margin-top: 40%;
+        font-size: 30px;
+        font-weight: bold;
+        color: #004B40;
+    }
+
+    .news>a:hover img {
+        width: 340px;
+    }
+
+    /*-----overlay end*/
+
+    .news .title-info {
+        color: #004B40;
+        font-size: larger;
+    }
+
+    .news .main-info {
+        color: darkolivegreen;
+        max-width: 340px;
+    }
+
+    .news .more-info-btn {
+        text-decoration: none;
+        color: #004B40;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 5px;
+        display: block;
+        border-radius: 5px;
+        max-width: 120px;
+        transition: 0.5s;
+    }
+
+    .news .more-info-btn:hover {
+        background-color: #004B40;
+        color: white;
+        padding: 15px;
+    }
+
+    /*-----page infomation for admissions end--------------------*/
+
+    /* scolarship start*/
+    .second-container {
+        flex-direction: column;
+    }
+
+    .scholarship-area {
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .scholarship-area p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .scholarship-content {
+        align-items: center;
+        min-width: 100px;
+    }
+
+
+    .scholarship-title {
+        font-size: 17px;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        color: #004B40;
+        padding: 5px;
+        border-radius: 5px;
+        transition: 0.5s;
+        display: block;
+    }
+
+    .scholarship-title:hover {
+        background-color: #004B40;
+        color: white;
+        padding: 8px;
+    }
+
+    .scholarship-content img {
+        width: 120px;
+        border-radius: 50%;
+    }
+
+
+
+    /*scholarship end*/
+
+    /*----page admission events start---------*/
+    .admission-events-area {
+        margin: 15px;
+        margin-left: auto;
+        max-width: 100%;
+        flex: 1;
+    }
+
+
+
+    .adms-event .date-square {
+        padding: 10px;
+        background-color: #FC9928;
+        border-radius: 5px;
+        flex: 1;
+    }
+
+    .events-title {
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .date-square p {
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: center;
+        color: white;
+        width: 70px;
+    }
+
+    .event-content div p {
+        font-size: 13px;
+        color: black;
+    }
+
+    .event-content div i {
+        color: #004B40;
+        font-size: large;
+
+    }
+
+    .event-content div span {
+        color: #004B40;
+        font-size: 13px;
+    }
+
+    .adms-event {
+        align-items: center;
+    }
+
+    .adms-event>div {
+        margin: 10px;
+    }
+
+    .event-content {
+        border: solid 3px #004B40;
+        border-radius: 15px;
+        padding: 10px;
+        flex: 3;
+    }
+
+
+
+
+    /*--advidsory start--*/
+    .advidsory-area {
+        background-color: #006666;
+        padding: 15px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+        line-height: 30px;
+        color: white;
+        font-size: larger;
+        border: none;
+        max-width: fit-content;
+    }
+
+    .advidsory>p:first-child {
+        text-align: center;
+        font-size: 30px;
+        border-bottom: #FC9928 solid 3px;
+        font-weight: bolder;
+        padding-bottom: 10px;
+    }
+
+
+
+
+    #advis-input-firstname {
+        height: 20px;
+        border-radius: 3px;
+        padding: 2px;
+        width: 97%;
+
+    }
+
+
+
+    #success {
+        margin-top: 10px !important;
+        font-size: 20px !important;
+        color: #FC9928 !important;
+        text-align: center;
+    }
+
+
+
+    #advis-input-lastname {
+        height: 20px;
+        border-radius: 3px;
+        width: 97%;
+    }
+
+
+    .input-he select {
+        width: 97%;
+    }
+
+    .input-message textarea {
+        width: 95%;
+    }
+
+
+    .submit-btn {
+        height: 25px;
+        width: 20%;
+
+    }
+
+    .submit-btn button:hover {
+        height: 35px;
+    }
+
+    /*--advidsory end--*/
+
+
+    /*Go to top start*/
+    .goto-Top {
+        position: fixed;
+        bottom: 10%;
+        color: white;
+        max-width: 9%;
+    }
+
+    .goto-Top i {
+        display: block;
+        padding: 4px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    /*Go to top end*/
+
+    /*This is footer code*/
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .foot-contents3 iframe {
+        width: 92%;
+    }
+
+    #email {
+        text-decoration: none;
+        color: white;
+    }
+
+    #email:hover {
+        color: chocolate;
+    }
+
+    footer {
+        background-color: #006666;
+        font-size: larger;
+        font-size: 15px;
+    }
+
+    .foot-contents3 {
+        flex: 1;
+        margin-top: 30px;
+    }
+
+    .foot-contents2 {
+        flex: 2;
+    }
+
+    .foot-contents1 {
+        flex: 2;
+        margin-bottom: 30px;
+    }
+
+    .footer i {
+        border-bottom: #FC9928 solid 3px;
+        margin-left: 40%;
+        margin-bottom: 10px;
+    }
+
+    /*----------------------------------------------*/
+}

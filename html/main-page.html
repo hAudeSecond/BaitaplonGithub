@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    <div id="banner"></div>
+    <div id="banner">
+
+    </div>
     <header class="header flex">
         <div id="logo">
             <img src="/img/ueh-logo.png" alt class="img-fluid logo-head">
@@ -30,14 +32,16 @@
         </div>
     </header>
     <div class="main-content" onclick="recolor(),recolormain()">
+        <button id="open-btn" onclick="menuSwipeIn()">>></button>
         <div class="menu">
             <ul class="menu1">
+                <button id="closed-btn" onclick="menuSwipeOut()">x</button>
                 <li><a href="#">Trang chủ</a></li>
                 <li><a href="#">Tuyển sinh</a></li>
                 <li>
-                    <a href="#">Khoa-Ngành</a>
+                    <a onclick="DropdownList()">Khoa-Ngành</a>
 
-                    <div class="animation-div">
+                    <div class="animation-div" id="major">
                         <ul class="list">
                             <li><a href="">Khoa Toán Kinh tế</a></li>
                             <li><a href="">Khoa Quản trị kinh doanh</a></li>
@@ -49,21 +53,29 @@
                             <li><a href="">Khoa Kinh tế</a></li>
                             <li><a href="">Khoa Quản trị nhân lực</a></li>
                             <li><a href="">Khoa Tiếng Anh</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#">Thông tin liên quan</a>
-                    <div class="animation-div">
+                    <a onclick="DropdownInfo()">Thông tin liên quan</a>
+                    <div class="animation-div" id="Info">
                         <ul class="list">
                             <li><a href="/html/de-an.html">Đề án</a></li>
-                            <li><a href="/html/diem-chuan.html" id="hau">Điểm chuẩn</a></li>
+                            <li><a href="/html/diem-chuan.html">Điểm chuẩn</a></li>
                             <li><a href="/html/Tylevieclam.html">Tỷ lệ việc làm</a></li>
+                            <button id="PullupInfo" ;
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupInfo()">^</button>
                         </ul>
                     </div>
                 </li>
                 <li><a href="mailto:hauvtct@gmail.com">Liên hệ</a></li>
+
             </ul>
+
         </div>
         <div class="goto-Top"><i class="material-icons" onclick="goToTop()">home</i></div>
         <!-- image slider start-->
@@ -152,7 +164,6 @@
                         <p>Tin tuyển sinh</p>
                     </div>
                 </a>
-
                 <p class="title-info">Thông báo tuyển sinh</p>
                 <p class="main-info">Thông báo tuyển sinh mới nhất của các Bậc/Hệ đào tạo</p>
                 <a class="more-info-btn" href="/html/tin-tuyen-sinh.html">Xem thêm</a>
@@ -284,8 +295,10 @@
                 <p class="advidsory-title">Đăng ký tư vấn</p>
                 <div class="input-name">
                     <p>Họ và tên:</p>
-                    <input type="text" name="advidsory-input" placeholder="Họ và tên lót" id="advis-input">
-                    <input type="text" name="advidsory-input" placeholder="Tên" id="advis-input">
+                    <input type="text" name="advidsory-input" placeholder="Họ và tên lót" id="advis-input-lastname">
+                    <input type="text" name="advidsory-input" placeholder="Tên" id="advis-input-firstname">
+                    <br>
+                    <p id="name-warning"></p>
                 </div>
                 <div class="input-he">
                     <p>Hệ:</p>
@@ -297,19 +310,25 @@
                         <option value="Tiến sĩ">Tiến sĩ</option>
                         <option value="Chứng chỉ ngắn hạn">Chứng chỉ ngắn hạn</option>
                     </select>
+                    <p id="warning"></p>
                 </div>
                 <div class="input-dki">
-                    <div><input type="checkbox" name="advidsory-input" value="Nhận thông tin tuyển sinh">Đăng ký nhận
+                    <div><input type="checkbox" id="ttts" value="Nhận thông tin tuyển sinh" class="check-box">Đăng ký
+                        nhận
                         thông
                         tin tuyển sinh</div>
-                    <div><input type="checkbox" name="advidsory-input" value="Đăng ký tư vấn">Đăng ký tư vấn</div>
+                    <div><input type="checkbox" id="tuvan" value="Đăng ký tư vấn" class="check-box">Đăng ký
+                        tư vấn</div>
+                    <p id="choice"></p>
                 </div>
                 <div class="input-message">
                     <textarea name="message" id="message-id" cols="67" rows="5" placeholder="Gửi tin nhắn"></textarea>
                 </div>
                 <div class="submit-btn">
-                    <button type="submit">Gửi</button>
+                    <button type="submit" onclick="checkAll()">Gửi</button>
                 </div>
+                <p id="success"></p>
+
             </div>
         </div>
         <!--scolarship end-->
@@ -329,7 +348,7 @@
                 Cơ sở <br>
                 Địa chỉ 1: 79 Hồ Tùng Mậu,
                 Cầu Giấy, Hà Nội. <br>
-                Địa chỉ 2: đường Lý Thường Kiệt, phường Lê Hồng Phong,<br> Phủ Lý, Hà Nam
+                Địa chỉ 2: đường Lý Thường Kiệt, phường Lê Hồng Phong, Phủ Lý, Hà Nam
 
             </div>
             <div class="foot-contents3">

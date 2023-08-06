@@ -30,14 +30,16 @@
         </div>
     </header>
     <div class=" main-content" onclick="recolor()">
+        <button id="open-btn" onclick="menuSwipeIn()">>></button>
         <div class="menu">
             <ul class="menu1">
+                <button id="closed-btn" onclick="menuSwipeOut()">x</button>
                 <li><a href="/html/main-page.html">Trang chủ</a></li>
                 <li><a href="#">Tuyển sinh</a></li>
                 <li>
-                    <a href="#">Khoa-Ngành</a>
+                    <a onclick="DropdownList()">Khoa-Ngành</a>
 
-                    <div class="animation-div">
+                    <div class="animation-div" id="major">
                         <ul class="list">
                             <li><a href="">Khoa Toán Kinh tế</a></li>
                             <li><a href="">Khoa Quản trị kinh doanh</a></li>
@@ -49,16 +51,22 @@
                             <li><a href="">Khoa Kinh tế</a></li>
                             <li><a href="">Khoa Quản trị nhân lực</a></li>
                             <li><a href="">Khoa Tiếng Anh</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#">Thông tin liên quan</a>
-                    <div class="animation-div">
+                    <a onclick="DropdownInfo()">Thông tin liên quan</a>
+                    <div class="animation-div" id="Info">
                         <ul class="list">
                             <li><a href="/html/de-an.html">Đề án</a></li>
-                            <li><a href="/html/diem-chuan.html" id="hau">Điểm chuẩn</a></li>
+                            <li><a href="#" id="hau">Điểm chuẩn</a></li>
                             <li><a href="/html/Tylevieclam.html">Tỷ lệ việc làm</a></li>
+                            <button id="PullupInfo" ;
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupInfo()">^</button>
                         </ul>
                     </div>
                 </li>

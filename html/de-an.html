@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" href="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2021/09/icon-ueh-100x100.png" sizes="32x32">
     <link rel="stylesheet" href="/css/de-an.css">
+    <link rel="icon" href="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2021/09/icon-ueh-100x100.png" sizes="32x32">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="/js/de-an.js"></script>
-    <title>Đề án tuyển sinh UEH</title>
+    <title id="tieude">Đê án trường đại học Kinh tế</title>
 </head>
 
 <body>
-
     <div id="banner"></div>
     <header class="header flex">
         <div id="logo">
@@ -23,17 +22,24 @@
             University of economic
         </div>
 
+        <div class="search flex">
+            <input id="search" type="text" placeholder="Tìm kiếm">
+            <div class="search-icon-container">
+                <img src="/img/search_img.png" alt="no-pics">
+            </div>
+        </div>
     </header>
     <div class="main-content">
-        <!--menu-->
+        <button id="open-btn" onclick="menuSwipeIn()">>></button>
         <div class="menu">
             <ul class="menu1">
-                <li><a href="/html/main-page.html">Trang chủ</a></li>
+                <button id="closed-btn" onclick="menuSwipeOut()">x</button>
+                <li><a href="main-page.html">Trang chủ</a></li>
                 <li><a href="#">Tuyển sinh</a></li>
                 <li>
-                    <a href="#">Khoa-Ngành</a>
+                    <a onclick="DropdownList()">Khoa-Ngành</a>
 
-                    <div class="animation-div">
+                    <div class="animation-div" id="major">
                         <ul class="list">
                             <li><a href="">Khoa Toán Kinh tế</a></li>
                             <li><a href="">Khoa Quản trị kinh doanh</a></li>
@@ -45,22 +51,29 @@
                             <li><a href="">Khoa Kinh tế</a></li>
                             <li><a href="">Khoa Quản trị nhân lực</a></li>
                             <li><a href="">Khoa Tiếng Anh</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#">Thông tin liên quan</a>
-                    <div class="animation-div">
+                    <a onclick="DropdownInfo()">Thông tin liên quan</a>
+                    <div class="animation-div" id="Info">
                         <ul class="list">
                             <li><a href="#">Đề án</a></li>
-                            <li><a href="/html/diem-chuan.html">Điểm chuẩn </a></li>
+                            <li><a href="/html/diem-chuan.html" id="hau">Điểm chuẩn</a></li>
                             <li><a href="/html/Tylevieclam.html">Tỷ lệ việc làm</a></li>
+                            <button id="PullupInfo" ;
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupInfo()">^</button>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Liên hệ</a></li>
+                <li><a href="mailto:hauvtct@gmail.com">Liên hệ</a></li>
             </ul>
         </div>
+
         <!-- image slider start-->
         <div class="slider">
             <div class="slides">
@@ -138,11 +151,8 @@
             <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0030.jpg" alt="">
             <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/0031.jpg" alt="">
         </div>
+
     </div>
-
-    <!--footer-->
-    <!--footer-->
-
     <footer>
         <div class="footer flex">
             <div class="foot-contents1" style="position: relative;">
@@ -156,7 +166,7 @@
                 Cơ sở <br>
                 Địa chỉ 1: 79 Hồ Tùng Mậu,
                 Cầu Giấy, Hà Nội. <br>
-                Địa chỉ 2: đường Lý Thường Kiệt, phường Lê Hồng Phong,<br> Phủ Lý, Hà Nam
+                Địa chỉ 2: đường Lý Thường Kiệt, phường Lê Hồng Phong, Phủ Lý, Hà Nam
 
             </div>
             <div class="foot-contents3">
@@ -171,7 +181,6 @@
             <p>University of Economic &copy; 2023. All Right Reserved</p>
         </div>
     </footer>
-
 </body>
 
 </html>
