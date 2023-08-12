@@ -6,6 +6,13 @@ setInterval(function () {
         counter = 1;
     }
 }, 6000);
+//Hàm trả về kết quả tìm kiếm khi người dùng click phím enter
+function checkEnter(event) {
+    if (event.key === "Enter")//Nếu nút được ấn xuống là Enter thì thực hiện hàm tìm kiếm
+    {
+        timkiem();
+    }
+}
 
 function timkiem() {
     let k1 = document.getElementById("search").value;

@@ -7,6 +7,13 @@ setInterval(function () {
     }
 }, 6000);
 
+//Hàm trả về kết quả tìm kiếm khi người dùng click phím enter
+function checkEnter(event) {
+    if (event.key === "Enter")//Nếu nút được ấn xuống là Enter thì thực hiện hàm tìm kiếm
+    {
+        timdiemchuan();
+    }
+}
 function timdiemchuan() {
     let k1 = document.getElementById("search").value;
     let v1 = document.getElementsByTagName("tr");
@@ -114,5 +121,98 @@ function PullupInfo() {
     }
 }
 
+
+/*=====================NẠP DATA VÀO TRANG ĐIỂM CHUẨN======= */
+/*Nạp dữ liệu điểm thi thpt  */
+function loadthpt() {
+    fetch("/data/diemchuanthpt.json").then(res => res.json()).then(data => {
+        let h = "";
+        for (let d of data)
+            h += `
+        <tr class="dulieu">
+            <td>${d.Stt}</td>
+            <td>${d.Id}</td>
+            <td>${d.name}</td>
+            <td>${d.toHop}</td>
+            <td>${d.diemChuan}</td>
+            <td></td>
+        </tr>
+        `;
+
+        let e = document.getElementById("markthpt");
+        if (e !== null) {
+            e.innerHTML += h;
+        }
+    })
+}
+
+/*Nạp dữ liệu điểm học bạ*/
+function loadhocba() {
+    fetch("/data/diemchuanhocba.json").then(res => res.json()).then(data => {
+        let h = "";
+        for (let d of data)
+            h += `
+        <tr class="dulieu">
+            <td>${d.Stt}</td>
+            <td>${d.Id}</td>
+            <td>${d.name}</td>
+            <td>${d.toHop}</td>
+            <td>${d.diemChuan}</td>
+            <td></td>
+        </tr>
+        `;
+
+        let e = document.getElementById("mark-hocba");
+        if (e !== null) {
+            e.innerHTML += h;
+        }
+    })
+}
+
+/*Nạp dữ liệu điểm chuẩn đánh giá năng lực */
+function loaddgnl() {
+    fetch("/data/diemchuandgnl.json").then(res => res.json()).then(data => {
+        let h = "";
+        for (let d of data)
+            h += `
+        <tr class="dulieu">
+            <td>${d.Stt}</td>
+            <td>${d.Id}</td>
+            <td>${d.name}</td>
+            <td>${d.toHop}</td>
+            <td>${d.diemChuan}</td>
+            <td></td>
+        </tr>
+        `;
+
+        let e = document.getElementById("mark-dgnl");
+        if (e !== null) {
+            e.innerHTML += h;
+        }
+    })
+}
+
+
+
+/*thực hiện hàm khi load xong */
+window.onload = function () {
+    loadthpt();
+    loadhocba();
+    loaddgnl();
+}
+
+
+/*THỰC HIỆN MENU CHO BẢNG ĐIỂM CHUẨN BẰNG JQUERY */
+$(document).ready(() => {
+    $("#menu-content a").click(function () {
+        $("#menu-content a").removeClass("active");
+        $(this).addClass("active");
+
+        let h = $(this).attr("href");
+        $(".tab-content > div").hide();
+        $(h).show();
+    });
+});
+/*========================================================== */
 
 

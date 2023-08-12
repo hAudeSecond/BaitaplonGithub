@@ -315,6 +315,43 @@ header>div {
 
 /*------------automatic end-------------------*/
 /*---TITLE*/
+
+#menu-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+@media screen and (min-width:1000px) {
+    #menu-content>li>a:hover {
+        background-color: #db7705;
+        padding: 13px;
+    }
+}
+
+#menu-content>li {
+    margin: 3px;
+}
+
+.tab-content>div:not(:first-child) {
+    display: none;
+}
+
+.active {
+    background-color: #db7705 !important;
+    color: white !important;
+}
+
+#menu-content>li>a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #006666;
+    color: white;
+    transition: 0.4s;
+}
+
 p.table-title {
     color: #004B40;
     font-size: 50px;
@@ -647,6 +684,8 @@ footer>div:last-child {
     }
 
     /*Body code start*/
+
+
     p.table-title {
         color: #004B40;
         font-size: 20px;

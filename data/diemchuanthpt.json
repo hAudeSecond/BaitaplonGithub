@@ -1,0 +1,142 @@
+[
+    {
+        "Stt": 1,
+        "Id": 7310101,
+        "name": "Kinh tế",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 26.5
+    },
+    {
+        "Stt": 2,
+        "Id": 7310104,
+        "name": "Kinh tế đầu tư",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 26
+    },
+    {
+        "Stt": 3,
+        "Id": 7340116,
+        "name": "Bất động sản",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 25.1
+    },
+    {
+        "Stt": 4,
+        "Id": 7340404,
+        "name": "Quản trị nhân lực",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 26.8
+    },
+    {
+        "Stt": 5,
+        "Id": 7620114,
+        "name": "Kinh doanh nông nghiệp",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 25.8
+    },
+    {
+        "Stt": 6,
+        "Id": 7340101,
+        "name": "Quản trị kinh doanh",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 26.2
+    },
+    {
+        "Stt": 7,
+        "Id": 7340120,
+        "name": "Kinh doanh quốc tế",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 27
+    },
+    {
+        "Stt": 8,
+        "Id": 7510605,
+        "name": "Logistics và quản lý chuỗi cung ứng",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 27.7
+    },
+    {
+        "Stt": 9,
+        "Id": 7340121,
+        "name": "Kinh doanh thương mại",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 26.9
+    },
+    {
+        "Stt": 10,
+        "Id": 7340115,
+        "name": "Marketing",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 27.5
+    },
+    {
+        "Stt": 11,
+        "Id": 7340201,
+        "name": "Tài chính - Ngân hàng",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 26.1
+    },
+    {
+        "Stt": 12,
+        "Id": 7340204,
+        "name": "Bảo hiểm",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 24.8
+    },
+    {
+        "Stt": 13,
+        "Id": 7340206,
+        "name": "Tài chính quốc tế",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 26.9
+    },
+    {
+        "Stt": 14,
+        "Id": 7340301,
+        "name": "Kế toán",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 25.8
+    },
+    {
+        "Stt": 15,
+        "Id": "7340301_01",
+        "name": "Chương trình kế toán tích hợp chứng chỉ quốc tế",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 23.1
+    },
+    {
+        "Stt": 16,
+        "Id": 7340302,
+        "name": "Kiểm Toán",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 27.8
+    },
+    {
+        "Stt": 17,
+        "Id": 7810103,
+        "name": "Quản trị dịch vụ du lịch và lữ hành",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 25.2
+    },
+    {
+        "Stt": 18,
+        "Id": 7810201,
+        "name": "Quản trị khách sạn",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 25.4
+    },
+    {
+        "Stt": 19,
+        "Id": 7310108,
+        "name": "Toán kinh tế",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 25.8
+    },
+    {
+        "Stt": 20,
+        "Id": 7310107,
+        "name": "Thống kê kinh tế",
+        "toHop": "A00; A01; D01; D07",
+        "diemChuan": 26
+    }
+]

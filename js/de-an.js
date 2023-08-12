@@ -92,6 +92,26 @@ function PullupInfo() {
         Info.style.display = "none";
     }
 }
+//Nạp dữ liệu đề án tuyển sinh
+function loadDean() {
+    fetch("/data/de-an.json").then(res => res.json()).then(data => {
+        let h = "";
+        for (let d of data)
+            h += `
+            <img src="${d.image}" alt="">
+            `;
+        let e = document.querySelector(".de-an");
+        if (e !== null) {
+            e.innerHTML += h;
+        }
+    })
+}
+//thực hiện hàm khi load xong
+window.onload = function () {
+    loadDean();
+}
+
+
 
 
 
