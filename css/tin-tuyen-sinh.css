@@ -70,7 +70,7 @@ body::-webkit-scrollbar-track {
 }
 
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:850px) {
 
     .menu li:hover .animation-div {
 
@@ -181,7 +181,7 @@ header>div {
     font-size: large;
 }
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:850px) {
     .menu .menu1 a:hover {
         background-color: #006666;
         color: white;
@@ -497,9 +497,88 @@ footer>div:last-child {
     }
 }
 
+/*=====================================RESPONSIVE FOR TABLET====================*/
+@media screen and (max-width:850px) {
+
+    #ten {
+        font-size: 15px;
+    }
+
+    .introduce {
+        font-size: 35px;
+    }
+
+    .news-area {
+        width: 300px;
+    }
+
+    .news-area img {
+        height: 200px;
+    }
+
+    /*responsive for tablet menu*/
+    .main-content {
+        width: 100%;
+    }
+
+    .menu1 a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+
+    .menu1 {
+        position: fixed;
+        flex-direction: column;
+        width: 50%;
+        top: 0px;
+        z-index: 100;
+        left: -60%;
+        transition: 0.4s;
+    }
+
+    .menu1 li {
+        width: 100%;
+        background-color: #FC9928;
+
+    }
+
+    .menu1>li>a {
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .list li a {
+        text-align: left;
+        padding-left: 30px;
+        color: #053737;
+    }
+
+    #closed-btn {
+        background-color: #FC9928;
+        color: #004B40;
+        border: 0;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #open-btn {
+        position: fixed;
+        z-index: 99;
+        top: 20px;
+        padding: 10px;
+        background-color: #db7705;
+        border: #004B40;
+        font-size: 30px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+}
+
 /*------------------------------RESPONSIVE FOR MOBILE-------------*/
 /*an cac nut khong can thiet cho man hinh lon*/
-@media screen and (min-width:450px) {
+@media screen and (min-width:850px) {
     #closed-btn {
         display: none;
     }

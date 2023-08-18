@@ -44,7 +44,7 @@ body span {
     animation-duration: 1.4s;
 }
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:850px) {
 
     .menu li:hover .animation-div {
 
@@ -155,7 +155,7 @@ header>div {
     font-size: large;
 }
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:850px) {
     .menu .menu1 a:hover {
         background-color: #006666;
         color: white;
@@ -630,11 +630,24 @@ body::-webkit-scrollbar-track {
     color: #FC9928 !important;
 }
 
+#advis-input-email {
+    height: 20px;
+    width: 99%;
+    border-radius: 5px;
+    padding: 2px;
+    border: none;
+}
 
 #advis-input-firstname {
     height: 30px;
     border-radius: 5px;
     padding: 2px;
+}
+
+#email-warning {
+    margin-top: 10px !important;
+    font-size: 15px !important;
+    color: #FC9928 !important;
 }
 
 #name-warning {
@@ -943,9 +956,167 @@ footer>div:last-child {
 
 }
 
+/*===================================================RESPONSIVE FOR TABLET===================================================*/
+@media screen and (max-width:850px) {
+
+
+    #ten {
+        font-size: 15px;
+    }
+
+    /*responsive for tablet menu*/
+    .main-content {
+        width: 100%;
+    }
+
+    .menu1 a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+
+    .menu1 {
+        position: fixed;
+        flex-direction: column;
+        width: 50%;
+        top: 0px;
+        z-index: 100;
+        left: -60%;
+        transition: 0.4s;
+    }
+
+    .menu1 li {
+        width: 100%;
+        background-color: #FC9928;
+
+    }
+
+    .menu1>li>a {
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .list li a {
+        text-align: left;
+        padding-left: 30px;
+        color: #053737;
+    }
+
+    #closed-btn {
+        background-color: #FC9928;
+        color: #004B40;
+        border: 0;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #open-btn {
+        position: fixed;
+        z-index: 99;
+        top: 20px;
+        padding: 10px;
+        background-color: #db7705;
+        border: #004B40;
+        font-size: 30px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    /*admission responsive for tablet*/
+
+    .admission-container .type {
+        position: absolute;
+
+        display: block;
+        min-width: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        left: 10px;
+    }
+
+    .admission-container {
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        height: 700px;
+    }
+
+    .admission-container>div {
+        max-width: 100%;
+        height: 16%;
+        padding: 10px;
+        text-align: center;
+        border-radius: 0px;
+    }
+
+    .admission-container div>p {
+        padding-top: 40px;
+    }
+
+    .admission-container div:first-child {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .admission-container div:last-child {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    /*responsive for image*/
+    .news img {
+        border-radius: 20px;
+        width: 250px;
+        transition: 0.4s;
+    }
+
+    .news>a:hover img {
+        width: 310px;
+    }
+
+    /*responsive for gotoTop button*/
+    .goto-Top {
+        position: fixed;
+        bottom: 10%;
+        color: white;
+        max-width: 9%;
+    }
+
+    .goto-Top i {
+        display: block;
+        padding: 8px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    /*responsive for footer*/
+    .foot-contents1 {
+        font-size: 15px;
+        flex: 1;
+        margin: 10px;
+    }
+
+    .foot-contents2 {
+        flex: 1;
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .foot-contents3 {
+        flex: 1.3;
+        margin: 10px;
+    }
+
+}
+
 /*===================================================RESPONSIVE FOR MOBILE===============================*/
 /*an cac nut khong can thiet cho man hinh lon*/
-@media screen and (min-width:450px) {
+@media screen and (min-width:850px) {
     #closed-btn {
         display: none;
     }

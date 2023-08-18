@@ -1,0 +1,32 @@
+[
+    {
+        "class": "admission1",
+        "name": "Tuyển sinh đại học chính quy",
+        "content": "Chương trình đa ngành, tiên tiến, tham khảo top 200 đại học trên thế giới, tích hợp kiến thức về chuyển đổi số."
+    },
+    {
+        "class": "admission2",
+        "name": "Tuyển sinh đại học vừa làm vừa học",
+        "content": "Chuẩn chương trình chính quy, thiết kế linh hoạt, gắn thực tiễn, học tập liên tục, nâng cao trình độ (Thạc sĩ, Tiến sĩ)."
+    },
+    {
+        "class": "admission3",
+        "name": "Tuyển sinh Thạc sĩ",
+        "content": "Chương trình thiết kế theo chuẩn quốc tế với các ngành đào tạo thuộc Top 100 Trường đào tạo Thạc sĩ tốt nhất thế giới"
+    },
+    {
+        "class": "admission1",
+        "name": "Tuyển sinh Tiến sĩ",
+        "content": "Chương trình nghiên cứu sinh theo chuẩn quốc tế, tạo cơ hội nghiên cứu và công bố quốc tế"
+    },
+    {
+        "class": "admission2",
+        "name": "Tuyển sinh Khóa ngắn hạn",
+        "content": "Khóa học đa dạng, đáp ứng nhu cầu nâng cao kiến thức, kỹ năng ở nhiều lĩnh vực."
+    },
+    {
+        "class": "admission3",
+        "name": "Tuyển sinh Liên kết quốc tế",
+        "content": "Học tập tại nước ngoài-Gia nhập thị trường lao động quốc tế."
+    }
+]

@@ -82,7 +82,7 @@ function menuFixed() {
     header.style.left = 0;
     header.style.right = 0;
     header.style.top = 0;
-    header.style.opacity = 0.75;
+    header.style.opacity = 0.65;
 }
 
 function menuBack() {
@@ -166,10 +166,21 @@ function checkLuaChon() {
         return true;
     }
 }
+
+function checkEmail() {
+    let email = document.getElementById("advis-input-email").value;
+    const regex = /^[a-zA-Z0-9]+@gmail.com$/
+    if (regex.test(email)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 function checkAll() {
     let warning = document.getElementById("warning");
     let name = document.getElementById("name-warning");
     let choice = document.getElementById("choice");
+    let email = document.getElementById("email-warning");
     let success = document.getElementById("success");
     if (checkInfo() === false) {
 
@@ -187,13 +198,19 @@ function checkAll() {
         name.innerHTML = "";
     }
 
+    if (checkEmail() === true) {
+        email.innerHTML = ""
+    }
+    else {
+        email.innerHTML = "Email không hợp lệ!"
+    }
     if (checkLuaChon() === false) {
         choice.innerHTML = "Chọn ít nhất 1 lựa chọn!";
     }
     else {
         choice.innerHTML = "";
     }
-    if (checkInfo() === true && checkName() === true && checkLuaChon() === true) {
+    if (checkInfo() === true && checkName() === true && checkLuaChon() === true && checkEmail() === true) {
         success.innerHTML = "ĐĂNG KÍ THÀNH CÔNG!";
     }
     else {
@@ -246,6 +263,30 @@ function PullupInfo() {
     if (Info.style.display === "block") {
         Info.style.display = "none";
     }
+}
+
+/*=====================NẠP DATA VÀO TRANG MAIN======= */
+/*Nạp dữ liệu điểm thi thpt  */
+function loadAdmission() {
+    fetch("/data/admission.json").then(res => res.json()).then(data => {
+        let h = "";
+        for (let d of data)
+            h += `
+        <div class="${d.class}">
+            <a href="#" class="type">${d.name}</a>
+            <p>${d.content}</p>
+        </div>
+        `;
+
+        let e = document.querySelector(".admission-container");
+        if (e !== null) {
+            e.innerHTML += h;
+        }
+    })
+}
+//khởi chạy khi cây dom load xong
+window.onload = function () {
+    loadAdmission();
 }
 
 

@@ -48,6 +48,7 @@ function menuFixed() {
     header.style.left = 0;
     header.style.right = 0;
     header.style.top = 0;
+    header.style.opacity = 0.65;
 
 }
 
@@ -55,8 +56,13 @@ function menuBack() {
     //trả thanh menu về vị trí ban đầu
     let header = document.querySelector(".menu");
     header.style.position = "relative";
+    header.style.opacity = 1;
 }
-
+/*Hàm điều chỉnh opacity của thanh menu khi rê chuột*/
+function hoverMenu() {
+    let header = document.querySelector(".menu");
+    header.style.opacity = 1;
+}
 window.onscroll = function () {
     console.info(document.documentElement.scrollTop);
 
