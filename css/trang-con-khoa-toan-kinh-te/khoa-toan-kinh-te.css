@@ -1,16 +1,15 @@
-.block-banner a {
-    align-items: center;
-    width: 100%;
+main {
+    width: 95%;
     position: relative;
-    overflow: hidden;
-    padding: 8px;
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.3;
-    font-weight: 600;
-    color: #fff;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.advidsory>p:first-child {
+    font-size: 18px;
+}
+
+
 
 .menu1>li {
     flex: 1;
@@ -22,9 +21,17 @@
     height: 48px;
 }
 
-.camnang {
-    border-radius: 15px;
-    background: rgba(155, 81, 224, .75);
+.admission-events-area {
+    margin: 0 auto;
+}
+
+.events-title {
+    font-size: 30px;
+    max-width: fit-content;
+}
+
+.scroll-box {
+    overflow-y: auto;
 }
 
 .container .text {

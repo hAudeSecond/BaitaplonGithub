@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main-page.css">
+    <link rel="stylesheet" href="/css/trang-con-khoa-toan-kinh-te/khoa-toan-kinh-te.css">
+    <link rel="stylesheet" href="/css/trang-con-khoa-toan-kinh-te/gioi-thieu.css">
+    <link rel="icon" href="/img/ueh-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Tuyển sinh trường đại học Kinh tế</title>
+</head>
+
+<body>
+    <header class="header flex">
+        <div id="logo">
+            <img src="/img/ueh-logo.png" alt class="img-fluid logo-head">
+        </div>
+        <div id="ten">
+            Khoa Marketing <br>
+            Faculty of Marketing
+        </div>
+
+        <div class="search flex">
+            <input id="search" type="text" placeholder="Tìm kiếm">
+            <div class="search-icon-container">
+                <img src="/img/search_img.png" alt="no-pics" onclick="timkiem(),timkiemmain()">
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content" onclick="recolor(),recolormain()">
+        <button id="open-btn" onclick="menuSwipeIn()">>></button>
+        <div class="menu" onmousemove="hoverMenu()">
+            <ul class="menu1">
+                <button id="closed-btn" onclick="menuSwipeOut()">x</button>
+                <li><a onclick="DropdownList()">Giới thiệu</a>
+                    <div class="animation-div">
+                        <ul class="list">
+                            <li><a href="/html/trang-con-khoa-marketing/gioi-thieu.html">Giới thiệu chung</a>
+                            </li>
+                            <li><a href="/html/trang-con-khoa-marketing/chuc-nang-nhiem-vu.html">Chức năng -
+                                    Nhiệm vụ</a></li>
+                            <li><a href="/html/trang-con-khoa-marketing/co-cau-to-chuc.html">Cơ cấu tổ
+                                    chức</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a onclick="DropdownList()">Đào tạo</a>
+                    <div class="animation-div">
+                        <ul class="list">
+                            <li><a href="https://www.ueh.edu.vn/UserData/FileManagers/ToChucHanhChinh/ChuongTrinhDaoTao/DHCQ/marketing/gioithieu.pdf"
+                                    target="_blank">Chương trình đào tạo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">Đề cương học phần</a>
+                            </li>
+                            <li><a href="">Học liệu</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a onclick="DropdownList()">Hoạt động khoa học</a>
+                    <div class="animation-div">
+                        <ul class="list">
+                            <li><a href="">Hội thảo khoa học</a></li>
+                            <li><a href="">Đề tài khoa học</a></li>
+                            <li><a href="">Bài báo khoa học</a></li>
+                            <li><a href="">NCKH sinh viên</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="block-main">
+            <div class="block-info">
+                <div class="container-left">
+                    <div class="title">
+                        <h2>Giới Thiệu</h2>
+                        <hr>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="active">
+                                <a title="Giới thiệu chung" href="/html/trang-con-khoa-marketing/gioi-thieu.html">Giới
+                                    thiệu chung</a>
+                            </li>
+                            <li>
+                                <a title="Chức năng nhiệm vụ"
+                                    href="/html/trang-con-khoa-marketing/chuc-nang-nhiem-vu.html">Chức năng
+                                    nhiệm vụ</a>
+                            </li>
+                            <li>
+                                <a title="Cơ cấu tổ chức" href="/html/trang-con-khoa-marketing/co-cau-to-chuc.html">Cơ
+                                    cấu tổ chức</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-right">
+                    <div class="main-detail">
+                        <div class="detail-content">
+                            <h1 class="title-detail">Giới thiệu</h1>
+                            <div class="desc-detail">
+                                <p class="text">
+                                    <strong>
+                                        <em>
+                                            <span style="font-size: 13pt; color: black;">Lịch sử hình thành và phát
+                                                triển</span>
+                                        </em>
+                                    </strong>
+                                </p>
+                                <p class="text">
+                                    <span style="font-size: 13pt; color: black;">
+                                        Khoa Marketing ngày nay (trước kia) được thành lập từ năm 1960 với tên gọi là
+                                        Khoa Thương phẩm. Khoa đã có quá trình hình thành và phát triển song song với
+                                        quá trình hình thành và phát triển về mọi mặt của Trường Đại học Thương mại.Với
+                                        nhiều thành tích đạt được trong quá trình phát triển, Khoa Marketing đã vinh dự
+                                        được nhận Huân chương lao động hạng 3 của Chủ tịch nước Cộng hòa xã hội chủ
+                                        nghĩa Việt nam và Bằng khen của Bộ trưởng Bộ Giáo dục và đào tạo. Trải qua quá
+                                        trình phát triển với những thay đổi về cơ cấu tổ chức và nhân sự, từ tháng 3 năm
+                                        2015, Khoa Marketing mới được hình thành trên cơ sở sát nhập 02 khoa Khoa Kinh
+                                        doanh Thương mại và Khoa Marketing cũ. Khoa Marketing mới lúc này được nhà
+                                        trường giao quản lý đào tạo 2 chuyên ngành thuộc ngành Marketing là Marketing
+                                        thương mại và Quản trị thương hiệu.
+                                    </span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer flex">
+            <div class="foot-contents1" style="position: relative;">
+                <i class="material-icons" style="font-size:50px;">perm_phone_msg</i><br>
+                <p>Email: <a id="email" href="mailto:2551050028hau@ou.edu.vn">mailto:2551050028hau@ou.edu.vn</a> </p>
+                <p>Hotline: 0916030072</p>
+                <p>Fax: (024) 123456789</p>
+            </div>
+            <div class="foot-contents2" style="position: relative;">
+                <i class="material-icons" style="font-size:50px;">home</i><br>
+                Cơ sở <br>
+                Địa chỉ 1: 79 Hồ Tùng Mậu,
+                Cầu Giấy, Hà Nội. <br>
+                Địa chỉ 2: đường Lý Thường Kiệt, phường Lê Hồng Phong,<br> Phủ Lý, Hà Nam
+
+            </div>
+            <div class="foot-contents3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8017415416393!2d105.76174371086316!3d21.040617387290265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454c0cb62cecd%3A0xa120ac8cb5345087!2zMTc5IMSQLiBI4buTIFTDuW5nIE3huq11LCBD4bqndSBEaeG7hW4sIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1689152269923!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+        <div style="background-color:white; color:#006666; font-weight:bolder; ">
+            <p>University of Economic &copy; 2023. All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

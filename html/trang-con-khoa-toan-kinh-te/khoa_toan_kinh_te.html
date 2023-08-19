@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/trang-con-khoa-toan-kinh-te/khoa-toan-kinh-te.css">
     <link rel="icon" href="/img/ueh-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/js/main-page.js"></script>
     <title>Tuyển sinh trường đại học Kinh tế</title>
 </head>
 
@@ -18,47 +19,66 @@
         </div>
         <div id="ten">
             Khoa Toán Kinh Tế <br>
-            University of economic
+            Faculty of Mathematical Economics
         </div>
 
         <div class="search flex">
             <input id="search" type="text" placeholder="Tìm kiếm">
             <div class="search-icon-container">
-                <img src="/img/search_img.png" alt="no-pics">
+                <img src="/img/search_img.png" alt="no-pics" onclick="timkiem(),timkiemmain()">
             </div>
         </div>
     </header>
-    
-    <div class="main-content">
-        <div class="menu">
+
+    <div class="main-content" onclick="recolor(),recolormain()">
+        <button id="open-btn" onclick="menuSwipeIn()">>></button>
+        <div class="menu" onmousemove="hoverMenu()">
             <ul class="menu1">
-                <li><a href="#">Giới thiệu</a>
+                <button id="closed-btn" onclick="menuSwipeOut()">x</button>
+                <li><a href="/html/trang-con-khoa-toan-kinh-te/khoa_toan_kinh_te.html">Trang chủ</a></li>
+                <li>
+                    <a onclick="DropdownList()">Giới thiệu</a>
                     <div class="animation-div">
                         <ul class="list">
-                            <li><a href="gioi-thieu-chung.html">Giới thiệu chung</a></li>
-                            <li><a href="">Chức năng - Nhiệm vụ</a></li>
-                            <li><a href="">Cơ cấu tổ chức</a></li>
+                            <li><a href="/html/trang-con-khoa-toan-kinh-te/gioi-thieu.html">Giới thiệu chung</a></li>
+                            <li><a href="/html/trang-con-khoa-toan-kinh-te/chuc-nang-nhiem-vu.html">Chức năng - Nhiệm
+                                    vụ</a></li>
+                            <li><a href="/html/trang-con-khoa-toan-kinh-te/co-cau-to-chuc.html">Cơ cấu tổ chức</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#">Đào tạo</a>
+                    <a onclick="DropdownList()">Đào tạo</a>
                     <div class="animation-div">
                         <ul class="list">
-                            <li><a href="">Chương trình đào tạo</a></li>
-                            <li><a href="">Đề cương học phần</a></li>
+                            <li><a href="https://www.ueh.edu.vn/UserData/FileManagers/ToChucHanhChinh/ChuongTrinhDaoTao/DHCQ/kinhte/kinhtehoc.pdf"
+                                    target="_blank">Chương trình đào tạo</a></li>
+                            <li>
+                                <a href="http://se.ueh.edu.vn/wp-content/uploads/de-cuong-mon-hoc/17D1301023801-syllabus-nguyen-ly-tham-dinh-gia.pdf"
+                                    target="_blank">Đề
+                                    cương học phần</a>
+                            </li>
                             <li><a href="">Học liệu</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#">Hoạt động khoa học</a>
+                    <a onclick="DropdownList()">Hoạt động khoa học</a>
                     <div class="animation-div">
                         <ul class="list">
                             <li><a href="">Hội thảo khoa học</a></li>
                             <li><a href="">Đề tài khoa học</a></li>
                             <li><a href="">Bài báo khoa học</a></li>
                             <li><a href="">NCKH sinh viên</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
                         </ul>
                     </div>
                 </li>
@@ -66,27 +86,94 @@
         </div>
     </div>
     <main>
-        
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttton start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio button end-->
+                <!--slides image start-->
+                <div class="slide first">
+                    <img src="https://se.ueh.edu.vn/wp-content/uploads/video-2-768x434.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2022/07/1499x600.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://sdh.ueh.edu.vn/uploads/images/46437327763ef1f118467d_Zalo-cut-%20Quản%20trị%20bền%20vững%20môi%20trường.jpg"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2021/11/Banner-cu-nhan-Lincoln-1792x972-1.jpg"
+                        alt="">
+                </div>
+                <!--slides image end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+
+
+            </div>
+            <!-- image sliders end -->
+        </div>
+        <div class="news-container flex">
+            <div class="news">
+                <p><span class="First-word">Tin tức</span><span class="rest"> Từ Khoa</span></p>
+                <a href=""><img
+                        src="https://toankinhte.tmu.edu.vn/upload/pictures/original/pictures-2-1673252583-1673252583.jpg"
+                        alt="thumb-tin-tuyen-sinh">
+                    <div class="overlay">
+                        <p>Các tin tức từ khoa</p>
+                    </div>
+                </a>
+                <p class="title-info">Thông báo sự kiện, thông tin mới</p>
+            </div>
+            <div class="news">
+                <p><span class="First-word">Tin tức</span><span class="rest"> Từ Nhà Trường</span></p>
+                <a href=""><img
+                        src="https://toankinhte.tmu.edu.vn/upload/pictures/original/pictures-1-1673252582-1673252582.jpg"
+                        alt="thumb-tin-huong-nghiep">
+                    <div class="overlay">
+                        <p>Tin tức được cập nhật từ nhà trường</p>
+                    </div>
+                </a>
+                <p class="title-info">Bản tin quan trọng</p>
+            </div>
+        </div>
 
     </main>
     <footer>
         <div class="footer flex">
-            <div class="foot-contents" style="position: relative;">
-                <i class="material-icons"
-                    style="position: absolute; top: 5px; right: 300px; font-size:50px;">perm_phone_msg</i>
+            <div class="foot-contents1" style="position: relative;">
+                <i class="material-icons" style="font-size:50px;">perm_phone_msg</i><br>
                 <p>Email: <a id="email" href="mailto:2551050028hau@ou.edu.vn">mailto:2551050028hau@ou.edu.vn</a> </p>
                 <p>Hotline: 0916030072</p>
                 <p>Fax: (024) 123456789</p>
             </div>
-            <div class="foot-contents" style="position: relative;">
-                <i class="material-icons" style="position: absolute; top: 15px; right: 420px; font-size:50px;">home</i>
+            <div class="foot-contents2" style="position: relative;">
+                <i class="material-icons" style="font-size:50px;">home</i><br>
                 Cơ sở <br>
                 Địa chỉ 1: 79 Hồ Tùng Mậu,
                 Cầu Giấy, Hà Nội. <br>
                 Địa chỉ 2: đường Lý Thường Kiệt, phường Lê Hồng Phong,<br> Phủ Lý, Hà Nam
 
             </div>
-            <div class="foot-contents">
+            <div class="foot-contents3">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8017415416393!2d105.76174371086316!3d21.040617387290265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454c0cb62cecd%3A0xa120ac8cb5345087!2zMTc5IMSQLiBI4buTIFTDuW5nIE3huq11LCBD4bqndSBEaeG7hW4sIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1689152269923!5m2!1svi!2s"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -95,7 +182,7 @@
             </div>
         </div>
         <div style="background-color:white; color:#006666; font-weight:bolder; ">
-            
+            <p>University of Economic &copy; 2023. All Right Reserved</p>
         </div>
     </footer>
 </body>

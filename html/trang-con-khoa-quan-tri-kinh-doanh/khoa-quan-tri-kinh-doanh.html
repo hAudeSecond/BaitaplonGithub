@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main-page.css">
+    <link rel="stylesheet" href="/css/trang-con-khoa-toan-kinh-te/khoa-toan-kinh-te.css">
+    <link rel="icon" href="/img/ueh-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Tuyển sinh trường đại học Kinh tế</title>
+</head>
+
+<body>
+    <header class="header flex">
+        <div id="logo">
+            <img src="/img/ueh-logo.png" alt class="img-fluid logo-head">
+        </div>
+        <div id="ten">
+            Khoa Quản Trị Kinh Doanh<br>
+            Faculty of Business Administration
+        </div>
+
+        <div class="search flex">
+            <input id="search" type="text" placeholder="Tìm kiếm">
+            <div class="search-icon-container">
+                <img src="/img/search_img.png" alt="no-pics" onclick="timkiem(),timkiemmain()">
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content" onclick="recolor(),recolormain()">
+        <button id="open-btn" onclick="menuSwipeIn()"></button>
+        <div class="menu" onmousemove="hoverMenu()">
+            <ul class="menu1">
+                <button id="closed-btn" onclick="menuSwipeOut()">x</button>
+                <li>
+                    <a onclick="DropdownList()">Giới thiệu</a>
+                    <div class="animation-div">
+                        <ul class="list">
+                            <li><a href="/html/trang-con-khoa-quan-tri-kinh-doanh/gioi-thieu.html">Giới thiệu chung</a>
+                            </li>
+                            <li><a href="/html/trang-con-khoa-quan-tri-kinh-doanh/chuc-nang-nhiem-vu.html">Chức năng -
+                                    Nhiệm vụ</a></li>
+                            <li><a href="/html/trang-con-khoa-quan-tri-kinh-doanh/co-cau-to-chuc.html">Cơ cấu tổ
+                                    chức</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a onclick="DropdownList()">Đào tạo</a>
+                    <div class="animation-div">
+                        <ul class="list">
+                            <li><a href="https://tmu.edu.vn///upload/tmu_old/quantrikinhdoanh/news/2022_05/chuong-trinh-day-hoc-nganh-qtkd-2022.pdf"
+                                    target="_blank">Chương trình đào tạo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">Đề cương học phần</a>
+                            </li>
+                            <li><a href="">Học liệu</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a onclick="DropdownList()">Hoạt động khoa học</a>
+                    <div class="animation-div">
+                        <ul class="list">
+                            <li><a href="">Hội thảo khoa học</a></li>
+                            <li><a href="">Đề tài khoa học</a></li>
+                            <li><a href="">Bài báo khoa học</a></li>
+                            <li><a href="">NCKH sinh viên</a></li>
+                            <button id="PullupList"
+                                style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
+                                onclick="PullupList()">^</button>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+
+        </div>
+        <!--admission events start-->
+        <div class="admission-events-area">
+            <p class="events-title">Thông báo quan trọng</p>
+            <div class="scroll-box">
+                <div class="adms-event flex">
+                    <div class="date-square">
+                        <p>23</p>
+                        <p>May</p>
+                    </div>
+                    <div class="event-content">
+                        <div>
+                            <p>Những thông tin chi tiết về tuyển sinh 2023 - khoa Quản trị kinh doanh. Đổi mới gì so với
+                                năm trước ?</p>
+                        </div>
+                        <div><i class="material-icons">class</i><span>Xét tuyển</span></div>
+                        <div><i class="material-icons">access_time</i><span> 23/05/2023</span></div>
+                    </div>
+
+                </div>
+                <div class="adms-event flex">
+                    <div class="date-square">
+                        <p>09</p>
+                        <p>Aug</p>
+                    </div>
+                    <div class="event-content">
+                        <div>
+                            <p>Tổ chức Hội thảo khoa học quốc gia thường niên. Chủ đề năm nay là "Khởi nghiệp và đổi mới
+                                trong kinh doanh"
+                            </p>
+                        </div>
+                        <div><i class="material-icons">class</i><span>Hội thảo</span></div>
+                        <div><i class="material-icons">access_time</i><span> 09/08/2023</span></div>
+                    </div>
+
+                </div>
+                <div class="adms-event flex">
+                    <div class="date-square">
+                        <p>17</p>
+                        <p>July</p>
+                    </div>
+                    <div class="event-content">
+                        <div>
+                            <p>
+                                Lễ công bố và trao quyết định bổ nhiệm, giao thực hiện chức trách nhiệm vụ quản lý năm
+                                2023</p>
+                        </div>
+                        <div><i class="material-icons">class</i><span>Sự kiện</span></div>
+                        <div><i class="material-icons">access_time</i><span> 17/07/2023</span></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--admission events end-->
+        <div class="advidsory-area">
+            <div class="advidsory">
+                <p class="advidsory-title">Đăng ký tư vấn ngay nếu bạn đã sẵn sàng trở thành sinh viên Khoa Quản trị
+                    kinh doanh
+                </p>
+                <div class="input-name">
+                    <p>Họ và tên:</p>
+                    <input type="text" name="advidsory-input" placeholder="Họ và tên lót" id="advis-input-lastname">
+                    <input type="text" name="advidsory-input" placeholder="Tên" id="advis-input-firstname">
+                    <br>
+                    <p id="name-warning"></p>
+                </div>
+                <div class="input-he">
+                    <p>Hệ:</p>
+                    <select name="advidsory-input" id="advis-input">
+                        <option value="-Hệ-">- Hệ -</option>
+                        <option value="Cử nhân Đại học chính quy">Cử nhân đại học chính quy</option>
+                        <option value="Cử nhân Đaị học vùa làm vừa học">Cử nhân Đaị học vừa làm vừa học</option>
+                        <option value="Thạc sĩ">Thạc sĩ</option>
+                        <option value="Tiến sĩ">Tiến sĩ</option>
+                        <option value="Chứng chỉ ngắn hạn">Chứng chỉ ngắn hạn</option>
+                    </select>
+                    <p id="warning"></p>
+                </div>
+                <div class="input-dki">
+                    <div><input type="checkbox" id="ttts" value="Nhận thông tin tuyển sinh" class="check-box">Đăng ký
+                        nhận
+                        thông
+                        tin tuyển sinh</div>
+                    <div><input type="checkbox" id="tuvan" value="Đăng ký tư vấn" class="check-box">Đăng ký
+                        tư vấn</div>
+                    <p id="choice"></p>
+                </div>
+                <div class="input-message">
+                    <textarea name="message" id="message-id" cols="67" rows="5" placeholder="Gửi tin nhắn"></textarea>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" onclick="checkAll()">Gửi</button>
+                </div>
+                <p id="success"></p>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer flex">
+            <div class="foot-contents1" style="position: relative;">
+                <i class="material-icons" style="font-size:50px;">perm_phone_msg</i><br>
+                <p>Email: <a id="email" href="mailto:2551050028hau@ou.edu.vn">mailto:2551050028hau@ou.edu.vn</a> </p>
+                <p>Hotline: 0916030072</p>
+                <p>Fax: (024) 123456789</p>
+            </div>
+            <div class="foot-contents2" style="position: relative;">
+                <i class="material-icons" style="font-size:50px;">home</i><br>
+                Cơ sở <br>
+                Địa chỉ 1: 79 Hồ Tùng Mậu,
+                Cầu Giấy, Hà Nội. <br>
+                Địa chỉ 2: đường Lý Thường Kiệt, phường Lê Hồng Phong,<br> Phủ Lý, Hà Nam
+
+            </div>
+            <div class="foot-contents3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8017415416393!2d105.76174371086316!3d21.040617387290265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454c0cb62cecd%3A0xa120ac8cb5345087!2zMTc5IMSQLiBI4buTIFTDuW5nIE3huq11LCBD4bqndSBEaeG7hW4sIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1689152269923!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+        <div style="background-color:white; color:#006666; font-weight:bolder; ">
+            <p>University of Economic &copy; 2023. All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
