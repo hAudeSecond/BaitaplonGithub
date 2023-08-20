@@ -671,10 +671,15 @@ body::-webkit-scrollbar-track {
 
 }
 
+#advis-input {
+    width: 100%;
+}
+
 #advis-input-lastname {
     height: 30px;
     border-radius: 5px;
     padding: 2px;
+    margin-left: 2%;
 }
 
 .input-name input {
