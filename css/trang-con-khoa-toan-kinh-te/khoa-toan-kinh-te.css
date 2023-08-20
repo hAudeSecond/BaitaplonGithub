@@ -15,11 +15,6 @@ main {
     flex: 1;
 }
 
-.img-fluid {
-    align-items: left;
-    width: 48px;
-    height: 48px;
-}
 
 .admission-events-area {
     margin: 0 auto;
@@ -27,11 +22,16 @@ main {
 
 .events-title {
     font-size: 30px;
+    border-bottom: #004B40 solid 3px;
     max-width: fit-content;
 }
 
 .scroll-box {
     overflow-y: auto;
+}
+
+.adms-event .date-square {
+    background-color: #004B40;
 }
 
 .container .text {

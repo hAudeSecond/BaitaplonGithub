@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main-page.css">
     <link rel="stylesheet" href="/css/trang-con-khoa-toan-kinh-te/khoa-toan-kinh-te.css">
+    <link rel="stylesheet" href="/css/tin-tuyen-sinh.css">
     <link rel="icon" href="/img/ueh-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/js/main-page.js"></script>
     <title>Tuyển sinh trường đại học Kinh tế</title>
 </head>
 
@@ -22,7 +24,7 @@
         </div>
 
         <div class="search flex">
-            <input id="search" type="text" placeholder="Tìm kiếm">
+            <input id="search" type="text" placeholder="Tìm kiếm" onkeydown="checkEnter(event)">
             <div class="search-icon-container">
                 <img src="/img/search_img.png" alt="no-pics" onclick="timkiem(),timkiemmain()">
             </div>
@@ -34,6 +36,7 @@
         <div class="menu" onmousemove="hoverMenu()">
             <ul class="menu1">
                 <button id="closed-btn" onclick="menuSwipeOut()">x</button>
+                <li><a href="/html/trang-con-khoa-toan-kinh-te/khoa_toan_kinh_te.html">Trang chủ</a></li>
                 <li><a onclick="DropdownList()">Giới thiệu</a>
                     <div class="animation-div">
                         <ul class="list">
@@ -85,7 +88,165 @@
         </div>
     </div>
     <main>
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttton start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio button end-->
+                <!--slides image start-->
+                <div class="slide first">
+                    <img src="https://sdh.ueh.edu.vn/uploads/banner/ueh--tuy%E1%BB%83n-sinh-th%E1%BA%A1c-s%C4%A9-ueh-8711015110.png"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://tuyensinh.ueh.edu.vn/wp-content/uploads/2023/02/13-CU-NHAN-MARKETING.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://th.bing.com/th/id/R.a06813bfca71498f42ead621bb9b3132?rik=g%2bhT%2fniGEbsvIQ&riu=http%3a%2f%2fsom.ueh.edu.vn%2fwp-content%2fuploads%2f2022%2f03%2fBanner-CityU-UEH.jpg&ehk=z0qpGsmcGlEaqog4rSr%2bf1kyq7dwABScsDUwplHorKM%3d&risl=&pid=ImgRaw&r=0"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://ueh.edu.vn/images/upload/slide/thumb-portal-tv-lon-043613-051922.jpg" alt="">
+                </div>
+                <!--slides image end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
 
+
+            </div>
+            <!-- image sliders end -->
+        </div>
+        <!--admission events start-->
+        <div class="admission-events-area">
+            <p class="events-title">Thông báo quan trọng</p>
+            <div>
+                <div class="adms-event flex">
+                    <div class="date-square">
+                        <p>02</p>
+                        <p>June</p>
+                    </div>
+                    <div class="event-content">
+                        <div>
+                            <p>Quyết định ban hành chuẩn đầu ra và chương trình đào tạo Marketing thương mại trình độ
+                                thạc sĩ định hướng ứng dụng</p>
+                        </div>
+                        <div><i class="material-icons">access_time</i><span> 02/06/2023</span></div>
+                    </div>
+
+                </div>
+                <div class="adms-event flex">
+                    <div class="date-square">
+                        <p>01</p>
+                        <p>June</p>
+                    </div>
+                    <div class="event-content">
+                        <div>
+                            <p>Quyết định ban hành chuẩn đầu ra và chương trình đào tạo Marketing thương mại trình độ
+                                thạc sĩ định hướng ứng dụng"
+                            </p>
+                        </div>
+                        <div><i class="material-icons">access_time</i><span> 01/06/2023</span></div>
+                    </div>
+
+                </div>
+                <div class="adms-event flex">
+                    <div class="date-square">
+                        <p>10</p>
+                        <p>Oct</p>
+                    </div>
+                    <div class="event-content">
+                        <div>
+                            <p>
+                                Tra cứu kết quả thi tuyển sinh cao học ngày 10/10/2022. Các chuyên ngành Marketing giảm
+                                hay tăng so với năm trước?</p>
+                        </div>
+                        <div><i class="material-icons">class</i><span>Tuyển sinh</span></div>
+                        <div><i class="material-icons">access_time</i><span> 10/10/2022</span></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="section1">
+            <!----------------------------------------->
+            <div class="news">
+                <div>
+                    <p class="news-title"><span>Tin tuyển sinh</span> <span></span> </p>
+                </div>
+                <div class="content-area flex">
+
+                    <div class="news-area">
+
+                        <div>
+
+                            <img src="/img/ueh-logo.png" alt="tintuyensinh-pics">
+                            <p class="news-content">
+                                Thông báo điểm chuẩn đủ điều kiện trúng tuyển ĐHCQ 2023 theo phương thức 409 và 500
+                            </p>
+                            <p class="date">21/7/2023</p>
+                        </div>
+                    </div>
+
+                    <div class="news-area">
+
+                        <div>
+
+                            <img src="/img/ueh-logo.png" alt="tintuyensinh-pics">
+                            <p class="news-content">
+                                Thông báo v/v nhập điểm thi tốt nghiệp THPT và rà soát thông tin đăng ký xét tuyển đối
+                                với các phương thức xét tuyển 200, 402a, 402b, 409, 410, 500
+                            </p>
+                            <p class="date">18/7/2023</p>
+                        </div>
+                    </div>
+
+                    <div class="news-area">
+
+                        <div>
+
+                            <img src="/img/ueh-logo.png" alt="tintuyensinh-pics">
+                            <p class="news-content">
+                                Thông báo về ngưỡng đảm bảo chất lượng đầu vào đại học chính quy năm 2023
+                            </p>
+                            <p class="date">17/07/2023</p>
+                        </div>
+                    </div>
+
+                    <div class="news-area">
+
+                        <div>
+
+                            <img src="/img/ueh-logo.png">
+                            <p class="news-content">
+                                Điểm chuẩn đủ điều kiện trúng tuyển ĐH chính quy 2023 theo các phương thức 200, 402a,
+                                402b, 410
+                            </p>
+                            <p class="date">05/07/2023</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
     <footer>
         <div class="footer flex">
@@ -100,7 +261,7 @@
                 Cơ sở <br>
                 Địa chỉ 1: 79 Hồ Tùng Mậu,
                 Cầu Giấy, Hà Nội. <br>
-                Địa chỉ 2: đường Lý Thường Kiệt, phường Lê Hồng Phong,<br> Phủ Lý, Hà Nam
+                Địa chỉ 2: đường Lý Thường Kiệt, phường Lê Hồng Phong, Phủ Lý, Hà Nam
 
             </div>
             <div class="foot-contents3">
@@ -110,6 +271,16 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
+        </div>
+        <div id="media" style="text-align: center;">
+            <a href="https://www.facebook.com/DHKT.UEH" target="_blank"><img
+                    src="https://img.icons8.com/?size=512&id=118497&format=png" alt=""
+                    style="width: 40px; cursor: pointer;"></a>
+            <a href="https://www.youtube.com/@UEHChannel " target="_blank"><img
+                    src="https://img.icons8.com/?size=512&id=19318&format=png" alt=""
+                    style="width: 40px; cursor: pointer;"></a>
+            <img src="/img/ueh-logo.png" style="width: 60px; cursor: pointer;" alt="">
+
         </div>
         <div style="background-color:white; color:#006666; font-weight:bolder; ">
             <p>University of Economic &copy; 2023. All Right Reserved</p>
