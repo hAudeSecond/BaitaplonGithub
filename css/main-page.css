@@ -762,9 +762,8 @@ body::-webkit-scrollbar-track {
 
 .footer {
 
-    padding: 40px;
+    padding: 35px 40px;
     align-items: center;
-    height: 3 00px;
     color: white;
     justify-content: space-around;
 }
