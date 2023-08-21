@@ -36,10 +36,10 @@
         <div class="menu" onmousemove="hoverMenu()">
             <ul class="menu1">
                 <button id="closed-btn" onclick="menuSwipeOut()">x</button>
-                <li><a href="/html/trang-con-khoa-toan-kinh-te/khoa_toan_kinh_te.html">Trang chủ</a></li>
+                <li><a href="/html/trang-con-khoa-quan-tri-kinh-doanh/khoa-quan-tri-kinh-doanh.html">Trang chủ</a></li>
                 <li>
                     <a onclick="DropdownList()">Giới thiệu</a>
-                    <div class="animation-div">
+                    <div class="animation-div" id="major">
                         <ul class="list">
                             <li><a href="/html/trang-con-khoa-quan-tri-kinh-doanh/gioi-thieu.html">Giới thiệu chung</a>
                             </li>
@@ -54,8 +54,8 @@
                     </div>
                 </li>
                 <li>
-                    <a onclick="DropdownList()">Đào tạo</a>
-                    <div class="animation-div">
+                    <a onclick="DropdownInfo()">Đào tạo</a>
+                    <div class="animation-div" id="Info">
                         <ul class="list">
                             <li><a href="https://tmu.edu.vn///upload/tmu_old/quantrikinhdoanh/news/2022_05/chuong-trinh-day-hoc-nganh-qtkd-2022.pdf"
                                     target="_blank">Chương trình đào tạo
@@ -67,13 +67,13 @@
                             <li><a href="">Học liệu</a></li>
                             <button id="PullupList"
                                 style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
-                                onclick="PullupList()">^</button>
+                                onclick="PullupInfo()">^</button>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a onclick="DropdownList()">Hoạt động khoa học</a>
-                    <div class="animation-div">
+                    <a onclick="DropdownContent()">Hoạt động khoa học</a>
+                    <div class="animation-div" id="content">
                         <ul class="list">
                             <li><a href="">Hội thảo khoa học</a></li>
                             <li><a href="">Đề tài khoa học</a></li>
@@ -81,7 +81,7 @@
                             <li><a href="">NCKH sinh viên</a></li>
                             <button id="PullupList"
                                 style="width: 100%; font-size: 20px; font-weight: bolder; background-color:#FC9928; border: none;"
-                                onclick="PullupList()">^</button>
+                                onclick="PullupContent()">^</button>
                         </ul>
                     </div>
                 </li>

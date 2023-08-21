@@ -264,6 +264,21 @@ function PullupInfo() {
         Info.style.display = "none";
     }
 }
+//hiện các trang thông tin hoạt động khoa học
+
+function DropdownContent() {
+    let Info = document.getElementById("content");
+    Info.style.display = "block";
+    Info.style.position = "relative";
+}
+//ẩn các trang thông tin liên quan
+
+function PullupContent() {
+    let Info = document.getElementById("content");
+    if (Info.style.display === "block") {
+        Info.style.display = "none";
+    }
+}
 
 /*=====================NẠP DATA VÀO TRANG MAIN======= */
 /*Nạp dữ liệu điểm thi thpt  */
