@@ -105,7 +105,7 @@ window.onscroll = function () {
     const screenWidth = window.innerWidth;
 
     //giá trị chiều rộng mà bạn muốn thực hiện hàm
-    const targetWidth = 450;
+    const targetWidth = 850;
 
     if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 50) {
         if (screenWidth > targetWidth) {
@@ -135,7 +135,7 @@ function goToTop() {
 
 /*hàm sử dụng để check thông tin form đăng kí tư vấn */
 
-function checkInfo() {
+function checkInfo() {//Kiểm tra hệ 
     let he = document.getElementById("advis-input").value;
     if (he === "-Hệ-") {
 
@@ -145,7 +145,7 @@ function checkInfo() {
         return true;
     }
 }
-function checkName() {
+function checkName() {//kiểm tra họ tên
     let firstname = document.getElementById("advis-input-firstname").value;
     let lastname = document.getElementById("advis-input-lastname").value;
     if (firstname === "" || lastname === "") {
@@ -156,7 +156,7 @@ function checkName() {
     }
 }
 
-function checkLuaChon() {
+function checkLuaChon() {//kiểm tra lựa chọn tư vấn
     let ttts = document.getElementById("ttts").checked;
     let tuvan = document.getElementById("tuvan").checked;
     if (!ttts && !tuvan) {
@@ -167,10 +167,10 @@ function checkLuaChon() {
     }
 }
 
-function checkEmail() {
+function checkEmail() {//kiểm tra email
     let email = document.getElementById("advis-input-email").value;
-    const regex = /^[a-zA-Z0-9]+@gmail.com$/
-    if (regex.test(email)) {
+    const regex = /^[a-zA-Z0-9]+@gmail.com$/ //sử dụng biểu thức chính quy để gắn định dạng chuẩn cho regex
+    if (regex.test(email)) {//kiểm tra xem người dùng có nhập email đúng định dạng không
         return true;
     } else {
         return false;

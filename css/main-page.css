@@ -23,7 +23,6 @@ body {
         top: 100%;
     }
 
-
     100% {
         top: 0px;
     }
@@ -232,6 +231,7 @@ header>div {
     margin: 2px;
 }
 
+/*thực hiện dịch chuyển trang đầu để tạo hiệu ứng chuyển slide*/
 .manual-btn:hover {
     background-color: #669999;
 }
@@ -1617,12 +1617,19 @@ footer>div:last-child {
         text-align: center;
     }
 
-
+    .input-name {
+        flex-direction: column;
+    }
 
     #advis-input-lastname {
         height: 20px;
         border-radius: 3px;
         width: 97%;
+        margin: 5px;
+    }
+
+    #advis-input-firstname {
+        margin: 5px;
     }
 
 

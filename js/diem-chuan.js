@@ -2,10 +2,10 @@ var counter = 1;
 setInterval(function () {
     document.getElementById('radio' + counter).checked = true;
     counter++;
-    if (counter > 4) {
+    if (counter > 4) {//nếu counter đếm quá số slide hiện có thì counter=1
         counter = 1;
     }
-}, 6000);
+}, 6000);//thực hiện lại hàm sau 6 giây
 
 //Hàm trả về kết quả tìm kiếm khi người dùng click phím enter
 function checkEnter(event) {
@@ -20,12 +20,12 @@ function timdiemchuan() {
     for (let i = 0; i < v1.length; i++) {
         var h1 = v1[i].textContent;
         h1 = h1.toUpperCase();
-        if (h1.indexOf(k1.toUpperCase()) >= 0) {
+        if (h1.indexOf(k1.toUpperCase()) >= 0) {//nếu tìm thấy 
             v1[i].setAttribute("style", "color:#CC6699; font-weight:bold; text-shadow:1px 1px black;");
         }
     }
 }
-function recolordiemchuan() {
+function recolordiemchuan() {//trả lại định dạng cũ khi người dùng click vào một nơi bất kì trên phần main-content
     let k2 = document.getElementById("search").value;
     let v2 = document.getElementsByTagName("tr");
     for (let i = 0; i < v2.length; i++) {
@@ -56,7 +56,7 @@ function menuBack() {
 /*Hàm điều chỉnh opacity của thanh menu khi rê chuột*/
 function hoverMenu() {
     let header = document.querySelector(".menu");
-    header.style.opacity = 1;
+    header.style.opacity = 1; //khi hover thì opacity là 1
 }
 window.onscroll = function () {
     console.info(document.documentElement.scrollTop);
@@ -65,7 +65,7 @@ window.onscroll = function () {
     const screenWidth = window.innerWidth;
 
     //giá trị chiều rộng mà bạn muốn thực hiện hàm
-    const targetWidth = 450;
+    const targetWidth = 850;
 
     if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 50) {
         if (screenWidth > targetWidth) {
@@ -213,9 +213,9 @@ $(document).ready(() => {
         $("#menu-content a").removeClass("active");
         $(this).addClass("active");
 
-        let h = $(this).attr("href");
-        $(".tab-content > div").hide();
-        $(h).show();
+        let h = $(this).attr("href");//gắn h là siêu liên kết nội của tab được click
+        $(".tab-content > div").hide(); //ẩn những bảng không được click
+        $(h).show();//hiện ra bảng đã click
     });
 });
 /*========================================================== */

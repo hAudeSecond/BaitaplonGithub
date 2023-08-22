@@ -70,7 +70,7 @@ window.onscroll = function () {
     const screenWidth = window.innerWidth;
 
     //giá trị chiều rộng mà bạn muốn thực hiện hàm
-    const targetWidth = 450;
+    const targetWidth = 850;
 
     if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 50) {
         if (screenWidth > targetWidth) {

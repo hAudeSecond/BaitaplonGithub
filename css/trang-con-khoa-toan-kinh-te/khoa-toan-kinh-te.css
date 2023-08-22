@@ -11,6 +11,10 @@ main {
 
 
 
+.advidsory {
+    text-align: center;
+}
+
 .menu1>li {
     flex: 1;
 }
